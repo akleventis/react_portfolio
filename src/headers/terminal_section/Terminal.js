@@ -1,6 +1,7 @@
 import React from "react";
 import "./terminal.css";
 import Typewriter from 'typewriter-effect/dist/core';
+import AOS from 'aos';
 
 
 class Terminal extends React.Component {
@@ -10,7 +11,7 @@ class Terminal extends React.Component {
   }
 
   componentDidMount() {
-    
+    AOS.init();
 
     let lst1 = [
         ["1", '> print("hey i\'m alex")'],
@@ -67,8 +68,7 @@ class Terminal extends React.Component {
     return (
       <div id="about" className="about-container">
         <div className="terminal-container" id="t-c">
-          <div className="terminal">
-            {/* <div data-aos="fade-right" data-aos-duration="3000" className="terminal"> */}
+            <div data-aos="fade-right" data-aos-duration="3000" className="terminal">
             <div className="t-head-container">
               <div></div>
               <div></div>

@@ -1,5 +1,4 @@
 import React from "react";
-import "./headers.css";
 import Navbar from "./navbar/Navbar"
 import Terminal from "./terminal_section/Terminal"
 
