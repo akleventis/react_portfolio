@@ -15,12 +15,12 @@
 
 .light-mode {
   --body-font: #000000;
-  --terminal-background: #e9ecbe;
-  --hover-background: #f1f093;
-  --hf-background: #a8cef0;
-  --body: #d8dfe0;
-  --hover-dark: #cbdceb;
-  --hover-border: #000000;
+  --terminal-background: #ffffff;
+  --hover-background: #dff9f2;
+  --hf-background: #c5fff0;
+  --body: #e9eef8;
+  --hover-dark: #ffffff;
+  --hover-border: #317a65;
   --terminal-text: #0b2208;
   --footer-a: #000000;
   --site-hover: #a2cae667;

@@ -1,8 +1,0 @@
-.my_image_click {
-    margin: 10px;
-    height: 420px;
-    width: 420px;
-    border-radius: 5%;
-    border: 1px solid var(--blue-border);
-    overflow: hidden;
-}

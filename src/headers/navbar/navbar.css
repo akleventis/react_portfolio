@@ -86,7 +86,7 @@
     transition: 1s;
   }
   input:checked + .slider-container {
-    background-color: #dfdd79;
+    background-color: #ffffff;
     border: 1px solid #07202e;
   }
   

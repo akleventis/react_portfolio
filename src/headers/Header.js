@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./navbar/Navbar"
-import Terminal from "./terminal_section/Terminal"
+import Terminal from "../terminal_section/Terminal"
 
 class Header extends React.Component {
     constructor(props) {

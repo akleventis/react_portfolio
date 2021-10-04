@@ -14,7 +14,7 @@ class Footer extends React.Component{
             <footer>
             <p>
               © Alex Leventis 2021<span className="link"><a href="http://alexcod.es/linkedin" rel="noreferrer" target="_blank">Linkdin</a></span
-              ><span className="link"><a href="http://alexcod.es/github" without rel="noreferrer" target="_blank">Github</a></span>
+              ><span className="link"><a href="http://alexcod.es/github" rel="noreferrer" target="_blank">Github</a></span>
             </p>
           </footer>
         )
