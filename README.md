@@ -14,3 +14,9 @@ Repo for my personal site. Hosted through AWS using Cloudfront for https
 6. [React Responsive Carousel](https://www.npmjs.com/package/react-responsive-carousel)
 
 - Migrated project from vanilla js to React for use of state while cycling through interests & profile image on the terminal screen
+</br>
+</br>
+<p align="center">
+  <img src=https://user-images.githubusercontent.com/64287087/135892280-cddcec58-ceda-4247-ad94-1ce3976e7b3b.gif alt="animated" />
+
+  </p>
