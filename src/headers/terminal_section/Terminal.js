@@ -2,12 +2,21 @@ import React from "react";
 import "./terminal.css";
 import Typewriter from 'typewriter-effect/dist/core';
 import AOS from 'aos';
+import MyImage from '../DynamicDiv/MyImage'
+import Snow from '../DynamicDiv/Snow' 
+import Bike from '../DynamicDiv/Bike' 
+import Paintings from '../DynamicDiv/Paintings' 
+import Piano from '../DynamicDiv/Piano' 
+import Uke from '../DynamicDiv/Uke' 
+import resume from '../../Documents/resume.pdf'
 
 
 class Terminal extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      divSection: []
+    };
   }
 
   componentDidMount() {
@@ -15,10 +24,13 @@ class Terminal extends React.Component {
 
     let lst1 = [
         ["1", '> print("hey i\'m alex")'],
-        ["2", "> print(location)"],
-        ["3", "> print(interests)"],
-        ["4", "> print(degree)"],
-        ["5", "> print(resume)"],
+        ["2", "> print(resume)"],
+        // ["2", "> print(location)"],
+        ["3", "> print(location)"],
+        ["4", "> print(interests)"],
+        ["5", "> print(degree)"],
+        // ["5", "> print(resume)"],
+        // ["2", "> print(location)"],
         ["6", "> print(links)"],
         ["7", "> print(email)"],
         ["8", "> alex.image()"],
@@ -27,10 +39,11 @@ class Terminal extends React.Component {
       
       let lst2 = [
         ["a", " hey i'm alex"],
-        ["b", " Raleigh, Nc"],
-        ["c", ' ["Reading", "Snowboarding", "Biking", "Coding", "Piano", "Ukulele"]'],
-        ["d", " Associates of Applied Science in Computer Programming and Development"],
-        ["e", '<a href="document/resume.pdf" target="_blank">resume.pdf</a>'],
+        ["b", '<a id="r" target="_blank">resume.pdf</a>'],
+        ["c", " Raleigh, Nc"],
+        ["d", ' ["Reading", <a id="snow">"Snowboarding"</a>, <a id="bike">"Biking"</a>, "Coding", <a id="paint">"Painting"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
+        ["e", " Associates of Applied Science in Computer Programming and Development"],
+        // ["e", '<a id="r" target="_blank">resume.pdf</a>'],
         [
           "f",
           ' [<a href="http://alexcod.es/github" target="_blank">github.com</a>, <a href="http://alexcod.es/linkedin" target="_blank">linkedin.com</a>]',
@@ -63,7 +76,35 @@ class Terminal extends React.Component {
       }
     }
     loop();
+    setTimeout(() => {
+      document.getElementById("snow").addEventListener('click', e => {
+        this.setState({divSection: <Snow />})
+      })
+      document.getElementById("bike").addEventListener('click', e => {
+        this.setState({divSection: <Bike />})
+      })
+      document.getElementById("paint").addEventListener('click', e => {
+        this.setState({divSection: <Paintings />})
+      })
+      document.getElementById("piano").addEventListener('click', e => {
+        this.setState({divSection: <Piano />})
+      })
+      document.getElementById("uke").addEventListener('click', e => {
+        this.setState({divSection: <Uke />})
+      })
+      document.getElementById("r").addEventListener('click', e => {
+        window.open(resume, "_blank")})
+    }, 9000)
   }
+
+
+
+  image = () => {
+    console.log("state")
+    this.setState({divSection: [<MyImage key={1}/>]})
+  }
+
+
   render() {
     return (
       <div id="about" className="about-container">
@@ -89,11 +130,12 @@ class Terminal extends React.Component {
             <p id="7"></p>
             <i id="g"></i>
             <p id="8"></p>
-            {/* <i id="h" onclick="img()"></i> */}
-            <i id="h"></i>
+            <i id="h" onClick={() => this.image()}></i>
             <p id="9"></p>
           </div>
-          <div id="my_image"></div>
+
+            {this.state.divSection}
+
         </div>
       </div>
     );

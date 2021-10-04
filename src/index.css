@@ -42,6 +42,7 @@ a {
   text-decoration: none;
   color: var(--body-font);
   transition: 500ms;
+  cursor: pointer;
 }
 a:hover {
   color: var(--link-hover);
