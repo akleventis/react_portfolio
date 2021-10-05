@@ -77,7 +77,6 @@ class Terminal extends React.Component {
       terminal(lst1[i][0], lst1[i][1]);
       i++;
       j++;
-      console.log(i)
       if (i === 5){
         document.getElementById("snow").addEventListener('click', e => {
           snow();
