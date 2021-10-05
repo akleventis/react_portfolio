@@ -2,6 +2,7 @@ import React from "react";
 import "./terminal.css";
 import Typewriter from 'typewriter-effect/dist/core';
 import AOS from 'aos';
+import "aos/dist/aos.css";
 import MyImage from '../DynamicDiv/MyImage'
 import Snow from '../DynamicDiv/Snow' 
 import Bike from '../DynamicDiv/Bike' 
