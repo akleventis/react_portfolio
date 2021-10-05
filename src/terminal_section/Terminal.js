@@ -12,6 +12,7 @@ import Uke from '../DynamicDiv/Uke'
 import resume from '../Documents/resume.pdf'
 import Computer from '../DynamicDiv/Code'
 import Read from '../DynamicDiv/Read'
+import Raleigh from '../DynamicDiv/Raleigh'
 
 
 class Terminal extends React.Component {
@@ -30,6 +31,7 @@ class Terminal extends React.Component {
     const uke = () => this.setState({divSection: <Uke />});
     const code = () => this.setState({divSection: <Computer />});
     const read = () => this.setState({divSection: <Read />});
+    const raleigh = () => this.setState({divSection: <Raleigh />})
 
     AOS.init();
 
@@ -48,7 +50,7 @@ class Terminal extends React.Component {
       let lst2 = [
         ["a", " hey i'm alex"],
         ["b", '<a id="r" target="_blank">resume.pdf</a>'],
-        ["c", " Raleigh, Nc"],
+        ["c", '<a id="raleigh">Raleigh, Nc</a>'],
         ["d", ' [<a id="read">"Reading"</a>, <a id="snow">"Snowboarding"</a>, <a id="bike">"Biking"</a>, <a id="comp">"Coding"</a>, <a id="paint">"Painting"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
         ["e", " Associates of Applied Science in Computer Programming and Development"],
         [
@@ -78,6 +80,11 @@ class Terminal extends React.Component {
       terminal(lst1[i][0], lst1[i][1]);
       i++;
       j++;
+      if (i===4){
+        document.getElementById("raleigh").addEventListener('click', e => {
+          raleigh();
+        })
+      }
       if (i === 5){
         document.getElementById("snow").addEventListener('click', e => {
           snow();
