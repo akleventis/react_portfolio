@@ -51,7 +51,7 @@ class Terminal extends React.Component {
         ["a", " hey i'm alex"],
         ["b", '<a id="r" target="_blank">resume.pdf</a>'],
         ["c", '<a id="raleigh">Raleigh, Nc</a>'],
-        ["d", ' [<a id="read">"Reading"</a>, <a id="snow">"Snowboarding"</a>, <a id="bike">"Biking"</a>, <a id="comp">"Coding"</a>, <a id="paint">"Painting"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
+        ["d", ' [<a id="read">"Books"</a>, <a id="snow">"Snow"</a>, <a id="bike">"Bikes"</a>, <a id="comp">"Code"</a>, <a id="paint">"Art"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
         ["e", " Associates of Applied Science in Computer Programming and Development"],
         [
           "f",
@@ -67,8 +67,7 @@ class Terminal extends React.Component {
       let typewriter = new Typewriter(app, { delay: 75 });
         typewriter.typeString(value).pauseFor(2000).start();
     }
-    let i = 0;
-    let j = 0;
+    let i = 0, j = 0;
     function loop() {
         
       if (i > 0) {
@@ -80,35 +79,25 @@ class Terminal extends React.Component {
       terminal(lst1[i][0], lst1[i][1]);
       i++;
       j++;
-      if (i===4){
-        document.getElementById("raleigh").addEventListener('click', e => {
+      if (i===3){
+        document.getElementById('r').addEventListener('click', e => {
+          window.open(resume, '_blank')})
+      }
+      if (i === 4){
+        document.getElementById('raleigh').addEventListener('click', e => {
           raleigh();
         })
       }
       if (i === 5){
-        document.getElementById("snow").addEventListener('click', e => {
-          snow();
+        const mapping = {'snow': snow, 'bike': bike, 'paint': painting,
+                          'piano': piano, 'uke': uke, 'comp': code,
+                          'read': read};
+        const ids = ['snow', 'bike', 'paint', 'piano', 'uke', 'comp', 'read']
+        ids.forEach(e => {
+          document.getElementById(e).addEventListener('click', event => {
+            mapping[e]();
+          }) 
         })
-        document.getElementById("bike").addEventListener('click', e => {
-          bike();
-        })
-        document.getElementById("paint").addEventListener('click', e => {
-          painting();
-        })
-        document.getElementById("piano").addEventListener('click', e => {
-          piano();
-        })
-        document.getElementById("uke").addEventListener('click', e => {
-          uke();
-        })
-        document.getElementById("comp").addEventListener('click', e => {
-          code();
-        })
-        document.getElementById("read").addEventListener('click', e => {
-          read();
-        })
-        document.getElementById("r").addEventListener('click', e => {
-          window.open(resume, "_blank")})
       }
       if (i < lst1.length) {
         setTimeout(loop, 2200);
@@ -117,14 +106,9 @@ class Terminal extends React.Component {
     loop()
   }
   
-  
-
-
   image = () => {
-    console.log("state")
     this.setState({divSection: [<MyImage key={1}/>]})
   }
-
 
   render() {
     return (
@@ -154,9 +138,7 @@ class Terminal extends React.Component {
             <i id="h" onClick={() => this.image()}></i>
             <p id="9"></p>
           </div>
-
             {this.state.divSection}
-
         </div>
       </div>
     );

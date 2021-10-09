@@ -25,14 +25,9 @@
 
 .git_image {
     width: 100px;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -ms-transition: 300ms;
-    -o-transition: 300ms;
-    transition: 300ms;
 }
 .git_image:hover{
-    width: 115px;
+    width: 103px;
 }
 
 @media (max-width: 800px){
@@ -45,7 +40,7 @@
         width: 80px;
     }
     .git_image:hover{
-        width: 90px;
+        width: 83px;
     }
 }
 @media (max-width: 590px){
@@ -58,6 +53,6 @@
         width: 60px;
     }
     .git_image:hover{
-        width: 70px;
+        width: 63px;
     }
 }

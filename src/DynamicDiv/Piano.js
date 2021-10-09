@@ -16,7 +16,7 @@ class Piano extends React.Component {
 
     render () {
         return( 
-        <video width="320" className="my_image_click" height="240" controls loop autoPlay>
+        <video width="320" className="my_image_click" height="240" controls autoPlay>
         <source src={piano} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
@@ -24,5 +24,4 @@ class Piano extends React.Component {
     }
 }
 
-
-export default Piano
+export default Piano;
