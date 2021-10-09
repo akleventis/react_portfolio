@@ -52,7 +52,7 @@ class Terminal extends React.Component {
         ["b", '<a id="r" target="_blank">resume.pdf</a>'],
         ["c", '<a id="raleigh">Raleigh, Nc</a>'],
         ["d", ' [<a id="read">"Books"</a>, <a id="snow">"Snow"</a>, <a id="bike">"Bikes"</a>, <a id="comp">"Code"</a>, <a id="paint">"Art"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
-        ["e", " Associates of Applied Science in Computer Programming and Development"],
+        ["e", "<a href='https://www.waketech.edu/programs-courses/credit/computer-programming' target='_blank'>Associates of Applied Science in Computer Programming and Development</a>"],
         [
           "f",
           ' [<a href="http://alexcod.es/github" target="_blank">github.com</a>, <a href="http://alexcod.es/linkedin" target="_blank">linkedin.com</a>]',
