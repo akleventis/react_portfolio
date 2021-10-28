@@ -63,6 +63,47 @@ class Resume extends React.Component {
               HTML & CSS
             </a>
           </ul>
+          <h5>Education</h5>
+          <div>
+            <a href="https://www.waketech.edu/" rel="noreferrer" target="_blank">
+              <img className="logo" id="wake" src={waketech} height="50px" width="50px" alt="waketech" />
+            </a>
+            <p>
+              <b>Wake Technical Community College</b>
+              <span>2020 - 2022</span>
+            </p>
+            <p>
+              <i>AAS in Computer Programming and Development</i>
+              <span>Raleigh, Nc</span>
+            </p>
+          </div>
+          <p className="c-lst">Related Coursework</p>
+          <ul className="lst">
+            <li>Computing Fundamentals</li>
+            <a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer" className="code">
+              Java
+            </a>
+            <li>Web, Pgm, Db Foundation</li>
+            <li>Operating Systems Concepts</li>
+            <a href="https://www.python.org/" rel="noreferrer" target="_blank" className="code">
+              Python
+            </a>
+            <li>Network and Security Foundation</li>
+            <li>Database Programming</li>
+            <a href="https://www.javascript.com/" rel="noreferrer" target="_blank" className="code">
+              JavaScript
+            </a>
+            <li>Web Markup and Scripting</li>
+            <li>Software Quality Assurance</li>
+            <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank" className="code">
+              SQL
+            </a>
+            <li>Software Development</li>
+            <li>Advanced Python & Java Programming</li>
+            <a href="https://www.w3.org/standards/webdesign/htmlcss.html" rel="noreferrer" target="_blank" className="code">
+              HTML & CSS
+            </a>
+          </ul>
           <h5>Experience</h5>
           <div>
             <a href="https://bitly.com/" rel="noreferrer" target="_blank">
