@@ -110,7 +110,7 @@ class Resume extends React.Component {
               Python
             </a>
             <li>Built script to automate data creation and updates from a static file (Python)</li>
-            {/* <li>Managed data models used across back-end services (Go)</li> */}
+            <li>Managed data models used across back-end services (Go)</li>
             <a href="https://mariadb.org/" target="_blank" rel="noreferrer" className="code">
               MariaDB
             </a>

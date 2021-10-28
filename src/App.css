@@ -25,6 +25,9 @@
   }
 }
 @media (max-width: 750px) {
+  .inner {
+    font-size: .9em;
+  }
   .logo {
     left: -10px;
   }
@@ -42,9 +45,7 @@
     height: 300px;
     width: 300px;
   }
-  .inner {
-    font-size: .9em;
-  }
+
   .r-link{
     height: 15px;
     width: 15px;
