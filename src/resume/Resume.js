@@ -128,7 +128,7 @@ class Resume extends React.Component {
               <span>2020 - 2022</span>
             </p>
             <p className="h-span">
-              <i>AAS in Computer Programming and Development</i>
+              <i>AAS Computer Programming and Development</i>
               <span>Raleigh, Nc</span>
             </p>
           </div>
