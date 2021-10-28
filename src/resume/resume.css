@@ -78,6 +78,9 @@
   h5:nth-of-type(2){
       margin-top: 0;
   }
+  h5:nth-of-type(3){
+    margin-top: 0;
+}
   
   /* School/Work span headings */
   .inner div {
@@ -85,7 +88,7 @@
     margin-top: 15px;
   }
   
-  .inner > div  p {
+  .h-span {
     margin: 0 3% 3px 40px;
     /* font-size: 0.9em; */
   }
@@ -140,3 +143,24 @@
     background-color: var(--hover-background);
   }
   
+
+  .lang-container {
+    /* margin-top: 5px; */
+    display: flex;
+    justify-content: space-evenly;
+    font-size: .9em;
+  }
+  .lp{
+    margin: 0;
+  }
+  
+  .language-tools {
+    margin-right: 15px;
+  }
+  .skill-gen{
+    margin-left: 10px;
+  }
+  .skill-profile{
+    margin: 5px;
+    font-size: .9em;
+  }
