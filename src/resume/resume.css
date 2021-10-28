@@ -103,7 +103,23 @@
   /* Lists */
   .inner ul {
     margin-top: 15px;
-    list-style: circle;
+    /* list-style: circle; */
+  }
+  @counter-style rockett {
+    system: cyclic;
+    symbols: "\1F680";
+    suffix: " ";
+  }
+  .experience {
+    list-style-type: rockett;
+  }
+  @counter-style books {
+    system: cyclic;
+    symbols: "\1F4DA";
+    suffix: " ";
+  }
+  .lst {
+    list-style-type: books;
   }
   .experience li {
     margin-right: 20%;
@@ -113,10 +129,6 @@
     font-size: 0.9em;
     margin-top: 15px;
     margin-bottom: 0;
-  }
-  
-  .lst {
-    height: 250px;
   }
   
   /* wake bitly logo  */
@@ -145,13 +157,19 @@
   
 
   .lang-container {
-    /* margin-top: 5px; */
     display: flex;
     justify-content: space-evenly;
     font-size: .9em;
   }
   .lp{
     margin: 0;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid var(--blue-border);
+    border-radius: 20px;
+    font-size: 0.85em;
+    text-align: center;
+    margin: auto 5px auto;
+    word-wrap: unset;
   }
   
   .language-tools {

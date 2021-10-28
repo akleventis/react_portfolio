@@ -47,6 +47,7 @@ a {
 a:hover {
   color: var(--link-hover);
 }
+
 ul {
   position: relative;
   font-size: 0.85em;

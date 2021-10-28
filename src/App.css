@@ -12,9 +12,6 @@
     margin-right: 2%;
     min-width: 100px;
   }
-  .lst {
-    height: 200px;
-  }
   .logo {
     height: 40px;
     width: 40px;
@@ -74,9 +71,6 @@
   }
   .one {
     font-size: 0.8em;
-  }
-  .lst {
-    height: 150px;
   }
   .one div {
     margin-top: 0;
