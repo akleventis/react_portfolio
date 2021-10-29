@@ -72,18 +72,20 @@ class Resume extends React.Component {
           </div>
 
           <h5>Technical</h5>
-          <div className="lang-container">
+          <section className="lang-container">
             <p className="lp">Git Workflows</p>
             <p className="lp">Agile Software Development</p>
-          </div>
+          </section>
           <h5>General</h5>
-          <div className="lang-container">
-            <p className="lp">Team player</p>
-            <p className="lp">Research-oriented</p>
+          <section className="lang-container lang-container-n">
+          <p className="lp">Team player</p>
+          <p className="lp">Analytical</p>
+          <p className="lp">Research-oriented</p>
+          </section>
+          <section className="lang-container">
             <p className="lp">Quality Assurance</p>
             <p className="lp">Great Communicator</p>
-            <p className="lp">Logical Reasoning</p>
-          </div>
+          </section>
 
           <h5>Experience</h5>
           <div>

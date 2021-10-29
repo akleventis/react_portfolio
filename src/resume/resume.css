@@ -156,10 +156,13 @@
   }
   
 
-  .lang-container {
+  .lang-container{
     display: flex;
     justify-content: space-evenly;
     font-size: .9em;
+  }
+  .lang-container-n {
+    margin-bottom: 10px;
   }
   .lp{
     margin: 0;
