@@ -130,6 +130,10 @@
     margin-top: 15px;
     margin-bottom: 0;
   }
+
+  li {
+    padding-left: .8rem;
+  }
   
   /* wake bitly logo  */
   .logo {
