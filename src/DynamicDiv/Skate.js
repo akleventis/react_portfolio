@@ -1,11 +1,11 @@
 import React from "react"
 
-import read from "../Images/read.jpg"
+import skate from "../Images/skate.jpg"
 
 import "./dynamicDiv.css"
 
 
-class Read extends React.Component {
+class Skate extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,10 +16,10 @@ class Read extends React.Component {
 
     render () {
         return( 
-        <img className="my_image_click" src = {read} alt="computer"/>
+        <img className="my_image_click" src = {skate} alt="computer"/>
       )
     }
 }
 
 
-export default Read
+export default Skate

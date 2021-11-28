@@ -11,7 +11,7 @@ import Piano from '../DynamicDiv/Piano'
 import Uke from '../DynamicDiv/Uke' 
 import resume from '../Documents/resume.pdf'
 import Computer from '../DynamicDiv/Code'
-import Read from '../DynamicDiv/Read'
+import Skate from '../DynamicDiv/Skate'
 import Raleigh from '../DynamicDiv/Raleigh'
 
 
@@ -30,7 +30,7 @@ class Terminal extends React.Component {
     const piano = () => this.setState({divSection: <Piano />});
     const uke = () => this.setState({divSection: <Uke />});
     const code = () => this.setState({divSection: <Computer />});
-    const read = () => this.setState({divSection: <Read />});
+    const skate = () => this.setState({divSection: <Skate />});
     const raleigh = () => this.setState({divSection: <Raleigh />})
 
     AOS.init();
@@ -51,7 +51,7 @@ class Terminal extends React.Component {
         ["a", " hey i'm alex"],
         ["b", '<a id="r" target="_blank">resume.pdf</a>'],
         ["c", '<a id="raleigh">Raleigh, Nc</a>'],
-        ["d", ' [<a id="read">"Books"</a>, <a id="snow">"Snow"</a>, <a id="bike">"Bikes"</a>, <a id="comp">"Code"</a>, <a id="paint">"Art"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
+        ["d", ' [<a id="skate">"Skating"</a>, <a id="snow">"Winter!"</a>, <a id="bike">"Biking"</a>, <a id="comp">"Code"</a>, <a id="paint">"Art"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
         ["e", "<a href='https://www.waketech.edu/programs-courses/credit/computer-programming' target='_blank'>Associates of Applied Science in Computer Programming and Development</a>"],
         [
           "f",
@@ -91,8 +91,8 @@ class Terminal extends React.Component {
       if (i === 5){
         const mapping = {'snow': snow, 'bike': bike, 'paint': painting,
                           'piano': piano, 'uke': uke, 'comp': code,
-                          'read': read};
-        const ids = ['snow', 'bike', 'paint', 'piano', 'uke', 'comp', 'read']
+                          'skate': skate};
+        const ids = ['snow', 'bike', 'paint', 'piano', 'uke', 'comp', 'skate']
         ids.forEach(e => {
           document.getElementById(e).addEventListener('click', event => {
             mapping[e]();

@@ -51,7 +51,7 @@
     transition: 1s;
   }
   .inner:hover .code {
-    transform: translateY(-35px);
+    transform: translateY(-30px);
     color: var(--terminal-text);
     border: 2px solid var(--blue-border);
     background-color: var(--hover-background);

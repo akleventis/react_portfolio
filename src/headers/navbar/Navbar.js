@@ -10,13 +10,13 @@ class Navbar extends React.Component {
   }
 
   componentDidMount() {
-    let lastScrollUp;
-    let navbar = document.getElementById("heading");
-    window.addEventListener("scroll", function () {
-      var scrollUp = window.pageYOffset || document.documentElement.scrollUp;
-      scrollUp > lastScrollUp ? (navbar.style.top = "-80px") : (navbar.style.top = "0");
-      lastScrollUp = scrollUp;
-    });
+    // let lastScrollUp;
+    // let navbar = document.getElementById("heading");
+    // window.addEventListener("scroll", function () {
+    //   var scrollUp = window.pageYOffset || document.documentElement.scrollUp;
+    //   scrollUp > lastScrollUp ? (navbar.style.top = "-80px") : (navbar.style.top = "0");
+    //   lastScrollUp = scrollUp;
+    // });
   }
 
   render() {
@@ -31,7 +31,7 @@ class Navbar extends React.Component {
           <img src={sun} style={{ width: "25px", height: "25px" }} alt="light" />
         </div>
         <h3>Alex Leventis</h3>
-        <div className="nav-container">
+        {/* <div className="nav-container">
           <p>
             <a href="#about">About</a>
           </p>
@@ -41,7 +41,7 @@ class Navbar extends React.Component {
           <p>
             <a href="#projects">Projects</a>
           </p>
-        </div>
+        </div> */}
       </div>
     );
   }

@@ -2,9 +2,8 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import water from "../Images/water.jpg";
-import bear from "../Images/bear.jpg";
-import rezz from "../Images/rezz.jpg";
-import eye from "../Images/eye.jpg";
+import smile from "../Images/smile.jpeg";
+import eye from "../Images/eye.jpeg";
 import flow from "../Images/flow.jpg";
 
 import "./dynamicDiv.css";
@@ -23,16 +22,13 @@ class Paintings extends React.Component {
             <img src={water} alt="water" />
           </div>
           <div>
+            <img src={smile} alt="smile" />
+          </div>
+          <div>
             <img src={eye} alt="eye" />
           </div>
           <div>
             <img src={flow} alt="flow" />
-          </div>
-          <div>
-            <img src={rezz} alt="rezz" />
-          </div>
-          <div>
-            <img src={bear} alt="bear" />
           </div>
         </Carousel>
       </div>

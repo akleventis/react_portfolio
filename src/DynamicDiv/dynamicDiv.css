@@ -6,6 +6,9 @@
     border: 1px solid var(--blue-border);
     overflow: hidden;
 }
+.my_image_click *{
+    padding-left: 0;
+}
 
 .code_container {
     position: relative;
@@ -16,43 +19,43 @@
 .code_container a:hover {
     border-bottom: none
 }
-.github {
+.img-link {
     position: absolute;
     right: 2%;
     top: 7%;
     transform: rotateY(0deg) rotate(25deg);
 }
 
-.git_image {
+.inner_image {
     width: 100px;
 }
-.git_image:hover{
+.inner_image:hover{
     width: 103px;
 }
 
 @media (max-width: 800px){
-    .github {
+    .img-link {
         position: absolute;
         right: 3%;
         top: 6%;
     }
-    .git_image {
+    .inner_image {
         width: 80px;
     }
-    .git_image:hover{
+    .inner_image:hover{
         width: 83px;
     }
 }
 @media (max-width: 590px){
-    .github {
+    .img-link {
         position: absolute;
         right: 3%;
         top: 6%;
     }
-    .git_image {
+    .inner_image {
         width: 60px;
     }
-    .git_image:hover{
+    .inner_image:hover{
         width: 63px;
     }
 }

@@ -1,6 +1,6 @@
 import React from "react"
 
-import me from "../Images/me1.png"
+import me from "../Images/me1.jpeg"
 
 import "./dynamicDiv.css"
 

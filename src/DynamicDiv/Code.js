@@ -20,8 +20,8 @@ class Computer extends React.Component {
   render() {
     return (
       <div className="code_container">
-        <a  className="github" href="http://alexcod.es/github" target="_blank" rel="noreferrer">
-            <img data-aos={"zoom-in-up"} className="git_image" src={github} alt="github" />
+        <a  className="img-link" href="http://alexcod.es/github" target="_blank" rel="noreferrer">
+            <img data-aos={"zoom-in"} className="inner_image" src={github} alt="github" />
         </a>
         <img className="my_image_click" src={computer} alt="computer" />
       </div>

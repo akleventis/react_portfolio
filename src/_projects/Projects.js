@@ -17,7 +17,7 @@ class Projects extends React.Component {
 
     componentDidMount() {
       AOS.init({
-        duration: 1500
+        duration: 0
       });
     }
 
@@ -29,20 +29,18 @@ class Projects extends React.Component {
               <div className="inner two">
                 <h4>Projects</h4>
                 <div className="row">
-                  <div data-aos={"zoom-in"} className="box">
-                    <a href="https://github.com/akleventis/Cat-Dog-Service" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${git})`}} className="git"></a>
+                  <div data-aos={"zoom-in"} data-aos-duration="800" className="box">
+                    <a href="https://alexcod.es/go_restapi" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${git})`}} className="git"></a>
                     <img src={dog} alt="dog" />
                     <p className="text">
-                      RESTful API developed with Spring boot as a foundation for simple CRUD operations on a database. Client is able to add, update, and
-                      delete the cats and dogs stored in the database. Organized by controller, entity, repository, and service packages.
+                      Go REST API with MySql database. Endpoint and handler functions for GET, POST, PATCH, and DELETE requests. Integrated test files for all handlers. Hit all endpoints with Postman to verify correct HTTP codes/database actions.
                     </p>
                     <div className="lang">
-                      <a href="https://www.oracle.com/java/" rel="noreferrer" target="_blank">Java</a>
+                      <a href="https://go.dev/" rel="noreferrer" target="_blank">Go</a>
                       <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank">SQL</a>
-                      <a href="https://spring.io/" rel="noreferrer" target="_blank">Spring</a>
                     </div>
                   </div>
-                  <div data-aos={"zoom-in"} className="box">
+                  <div data-aos={"zoom-in"} data-aos-duration="800" className="box">
                     <a href="https://alexcod.es/reactapi-github" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${git})`}} className="git"></a>
                     <img src={cat} alt="cat" />
                     <a href="https://alexcod.es/reactapi" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${site})`}} name="site-link" className="site-link"></a>
