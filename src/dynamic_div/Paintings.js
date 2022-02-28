@@ -1,10 +1,10 @@
 import React from "react";
-import ImageGallery from 'react-image-gallery';
+import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-import water from "../Images/water.jpg";
-import smile from "../Images/smile.jpeg";
-import eye from "../Images/eye.jpeg";
-import flow from "../Images/flow.jpg";
+import water from "../assets/images/water.jpg";
+import smile from "../assets/images/smile.jpeg";
+import eye from "../assets/images/eye.jpeg";
+import flow from "../assets/images/flow.jpg";
 
 import "./dynamicDiv.css";
 

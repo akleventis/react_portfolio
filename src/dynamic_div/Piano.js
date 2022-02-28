@@ -1,11 +1,11 @@
 import React from "react"
 
-import bike from "../Videos/bike.mov"
+import piano from "../assets/videos/piano.mp4"
 
 import "./dynamicDiv.css"
 
 
-class Bike extends React.Component {
+class Piano extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,13 +16,12 @@ class Bike extends React.Component {
 
     render () {
         return( 
-        <video width="320" className="my_image_click" height="240" controls loop autoPlay muted>
-        <source src={bike} type="video/mp4" />
+        <video width="320" className="my_image_click" height="240" controls autoPlay>
+        <source src={piano} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
       )
     }
 }
 
-
-export default Bike
+export default Piano;

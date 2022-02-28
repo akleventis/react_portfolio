@@ -1,6 +1,6 @@
 import React from "react"
 
-import skate from "../Images/skate.jpg"
+import skate from "../assets/images/skate.jpg"
 
 import "./dynamicDiv.css"
 

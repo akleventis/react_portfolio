@@ -1,8 +1,8 @@
 import React from "react"
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import uke from "../Images/uke.jpg"
-import youtube from "../Images/youtube.png"
+import uke from "../assets/images/uke.jpg"
+import youtube from "../assets/images/youtube.png"
 
 import "./dynamicDiv.css"
 

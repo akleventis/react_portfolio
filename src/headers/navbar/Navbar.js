@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css";
-import moon from "../../Images/moon.png";
-import sun from "../../Images/sun.png";
+import moon from "../../assets/images/moon.png";
+import sun from "../../assets/images/sun.png";
 
 class Navbar extends React.Component {
   constructor(props) {

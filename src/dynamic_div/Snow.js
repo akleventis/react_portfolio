@@ -1,6 +1,6 @@
 import React from "react"
 
-import snow from "../Videos/snow.mp4"
+import snow from "../assets/videos/snow.mp4"
 
 import "./dynamicDiv.css"
 

@@ -1,13 +1,12 @@
 import React from "react";
 import Header from "./headers/Header";
 import Resume from "./resume/Resume";
-import Projects from "./_projects/Projects";
+import Projects from "./projects/Projects";
 import Footer from "./headers/Footer";
-import waketech from "./Images/wake.png"
-import wake2 from "./Images/wake2.png"
-import site from "./Images/site.png"
-import site2 from "./Images/site2.png"
-import "./App.css";
+import waketech from "./assets/images/wake.png"
+import wake2 from "./assets/images/wake2.png"
+import site from "./assets/images/site.png"
+import site2 from "./assets/images/site2.png"
 
 class App extends React.Component {
   constructor(props) {

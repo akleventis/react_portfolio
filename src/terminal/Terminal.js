@@ -3,16 +3,16 @@ import "./terminal.css";
 import Typewriter from 'typewriter-effect/dist/core';
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import MyImage from '../DynamicDiv/MyImage'
-import Snow from '../DynamicDiv/Snow' 
-import Bike from '../DynamicDiv/Bike' 
-import Paintings from '../DynamicDiv/Paintings' 
-import Piano from '../DynamicDiv/Piano' 
-import Uke from '../DynamicDiv/Uke' 
-import resume from '../Documents/resume.pdf'
-import Computer from '../DynamicDiv/Code'
-import Skate from '../DynamicDiv/Skate'
-import Raleigh from '../DynamicDiv/Raleigh'
+import MyImage from '../dynamic_div/MyImage'
+import Snow from '../dynamic_div/Snow' 
+import Bike from '../dynamic_div/Bike' 
+import Paintings from '../dynamic_div/Paintings' 
+import Piano from '../dynamic_div/Piano' 
+import Uke from '../dynamic_div/Uke' 
+import resume from '../docs/resume.pdf'
+import Computer from '../dynamic_div/Code'
+import Skate from '../dynamic_div/Skate'
+import Raleigh from '../dynamic_div/Raleigh'
 
 
 class Terminal extends React.Component {

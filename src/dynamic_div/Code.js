@@ -1,8 +1,8 @@
 import React from "react";
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import computer from "../Images/computer.jpg";
-import github from "../Images/github.png"
+import computer from "../assets/images/computer.jpg";
+import github from "../assets/images/github.png"
 
 import "./dynamicDiv.css";
 
