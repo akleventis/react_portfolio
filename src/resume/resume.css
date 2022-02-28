@@ -11,7 +11,8 @@
     padding: 2%;
     border: 2px solid var(--blue-border);
     border-radius: 10px;
-    min-width: 900px;
+    max-width: 900px;
+    width: 100%;
     margin: 20px 0 20px 0;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
@@ -33,36 +34,24 @@
   
   .code {
     font-family: "Share Tech Mono", monospace;
-    color: transparent;
-    border: 2px solid transparent;
-    background-color: transparent;
-    border-color: transparent;
+    color: var(--terminal-text);
+    border: 2px solid var(--blue-border);
+    background-color: var(--hover-background);
     position: absolute;
-    left: 85%;
+    right: 1%;
     width: 100px;
     text-align: center;
     border-radius: 20px;
     font-size: 0.75em;
     padding: 5px 0 3px 0;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
   }
-  .inner:hover .code {
-    transform: translateY(-30px);
-    color: var(--terminal-text);
-    border: 2px solid var(--blue-border);
-    background-color: var(--hover-background);
-  }
-  
+
+
   /* School & Work Info Positioning */
   .inner h4 {
     text-align: center;
     margin-top: 0;
     margin: 0;
-    font-size: 1.2em;
   }
   
   /* 'Education' 'Experience' headers  */
@@ -90,10 +79,11 @@
   
   .h-span {
     margin: 0 3% 3px 40px;
-    /* font-size: 0.9em; */
+    font-size: .9em;
   }
   .inner div span {
     float: right;
+    margin-left: 10px;
   }
   
   .inner i {
@@ -122,17 +112,13 @@
     list-style-type: books;
   }
   .experience li {
-    margin-right: 20%;
-  }
-  /* "Related Coursework heading & list" */
-  .c-lst {
-    font-size: 0.9em;
-    margin-top: 15px;
-    margin-bottom: 0;
+    margin-right: 25%;
   }
 
   li {
     padding-left: .8rem;
+    margin-bottom: 2px;
+    font-size: .85em;
   }
   
   /* wake bitly logo  */
@@ -189,3 +175,13 @@
     margin: 5px;
     font-size: .9em;
   }
+
+
+  @media (max-width: 472px) {
+    li {
+      font-size: .75em;
+    }
+    .h-span {
+      font-size: .8em;
+    }
+  } 

@@ -5,7 +5,6 @@
     display: block;
     width: 100%;
     padding: 10px 0 10px 0;
-    /* transition: 500ms; */
     border-bottom: 2px solid var(--blue-border);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -17,39 +16,19 @@
     text-align: center;
     margin: 0;
   }
-  
-  /* .nav-container {
-    position: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--hf-background);
-    font-size: 0.85em;
-    width: 100%;
-    border-bottom: 2px solid var(--blue-border);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    transition: 500ms;
-  } */
-/*   
-  .nav-container p {
-    margin: 5px 0 5px 0;
-  }
-  
-  .nav-container > p a {
-    text-decoration: none;
-  } */
 
   .switch-container {
     position: absolute;
     right: 3%;
     z-index: 1;
-    top: 15px;
+    top: 20%;
   }
   .switch {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 12px;
+    width: 30px;
+    height: 11px;
+    padding-bottom: 3px;
   }
   
   .switch-container img{
@@ -61,6 +40,7 @@
     width: 0;
     height: 0;
   }
+
   .slider-container {
     position: absolute;
     cursor: pointer;
@@ -68,26 +48,28 @@
     left: 0;
     right: 0;
     bottom: 0;
+    border: 1px solid #008616;
     background-color: #000000;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
   }
   .slider-container:before {
     position: absolute;
     content: "";
-    height: 9px;
+    height: 10px;
     width: 10px;
     background-color: #131c2b;
     border: 1px solid #008616;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
   }
+
   input:checked + .slider-container {
     background-color: #ffffff;
     border: 1px solid #07202e;
@@ -96,7 +78,7 @@
   input:checked + .slider-container:before {
     background-color: #62aae6;
     border: 1px solid #07202e;
-    transform: translateX(27px);
+    transform: translateX(16px);
   }
 
   /* Rounded sliders */
@@ -107,3 +89,9 @@
   .slider-container.round:before {
     border-radius: 50%;
   }
+
+.switch-container img {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
