@@ -91,8 +91,9 @@ class Resume extends React.Component {
 
           <h5>Experience</h5>
           <div>
+          <img className="logo" src={bitly} height="50px" width="50px" alt="bitly" />
             <a href="https://bitly.com/" rel="noreferrer" target="_blank">
-              <img className="logo" src={bitly} height="50px" width="50px" alt="bitly" />
+              
             </a>
             <p className="h-span">
               <b>Bitly</b>
@@ -132,8 +133,9 @@ class Resume extends React.Component {
 
           <h5>Education</h5>
           <div>
+          <img className="logo" id="wake" src={waketech} height="50px" width="50px" alt="waketech" />
             <a href="https://www.waketech.edu/" rel="noreferrer" target="_blank">
-              <img className="logo" id="wake" src={waketech} height="50px" width="50px" alt="waketech" />
+              
             </a>
             <p className="h-span">
               <b>Wake Technical Community </b>

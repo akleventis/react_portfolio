@@ -20,7 +20,7 @@
   .terminal {
     font-family: "Share Tech Mono", monospace;
     width: 500px;
-    height: 500px;
+    min-height: 500px;
     margin: 10px;
     color: var(--terminal-text);
     background-color: var(--terminal-background);

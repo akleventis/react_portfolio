@@ -57,7 +57,7 @@
   /* 'Education' 'Experience' headers  */
   .inner h5 {
       margin: 25px 0 10px 0;
-      font-size: 1em;
+      font-size: .9em;
       border-bottom: 3px double var(--blue-border);
       border-radius: 3px;
       display: inline-block;
@@ -81,9 +81,13 @@
     margin: 0 3% 3px 40px;
     font-size: .9em;
   }
+  .h-span i {
+    font-size: .85em;
+  }
   .inner div span {
     float: right;
     margin-left: 10px;
+    font-size: .85em;
   }
   
   .inner i {
@@ -93,7 +97,7 @@
   /* Lists */
   .inner ul {
     margin-top: 15px;
-    /* list-style: circle; */
+    /* list-style: circle;s */
   }
   @counter-style rockett {
     system: cyclic;
@@ -116,16 +120,16 @@
   }
 
   li {
-    padding-left: .8rem;
+    padding-left: .5rem;
     margin-bottom: 2px;
-    font-size: .85em;
+    font-size: .9em;
   }
   
   /* wake bitly logo  */
   .logo {
     position: absolute;
     padding: 3px;
-    left: -25px;
+    left: -2%;
     border-radius: 50%;
     background-color: transparent;
     border: 1px solid transparent;
@@ -139,10 +143,6 @@
     padding-bottom: 20px;
     margin-top: 50px;
     margin-bottom: 90px;
-  }
-  .one:hover .logo {
-    border: 1px solid var(--hover-border);
-    background-color: var(--hover-background);
   }
   
 
@@ -177,11 +177,15 @@
   }
 
 
-  @media (max-width: 472px) {
+  @media (max-width: 497px) {
     li {
       font-size: .75em;
     }
     .h-span {
       font-size: .8em;
+    }
+    .code {
+      font-size: .65em;
+      width: 75px;
     }
   } 

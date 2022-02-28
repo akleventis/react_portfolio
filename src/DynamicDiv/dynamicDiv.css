@@ -48,3 +48,10 @@
         width: 69px;
     }
 }
+
+@media (max-width: 500px){
+    .my_image_click {
+        height: 300px;
+        width: 300px;
+    }
+}
