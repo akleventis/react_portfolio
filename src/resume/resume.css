@@ -108,13 +108,6 @@
     padding: 3px;
     left: -2%;
     border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid transparent;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
   }
   .two{
     padding-bottom: 20px;
@@ -141,6 +134,12 @@
     word-wrap: unset;
   }
   
+.gen {
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+}
+
   .language-tools {
     margin-right: 15px;
   }

@@ -75,23 +75,22 @@ class Resume extends React.Component {
           </section>
           <h5>General</h5>
           <section className="lang-container">
-            <p className="lp">Team player</p>
-            <p className="lp">Analytical</p>
-            <p className="lp">Research-oriented</p>
-            <p className="lp">Quality Assurance</p>
+            <p className="lp gen">Team player</p>
+            <p className="lp gen">Analytical</p>
+            <p className="lp gen">Research-oriented</p>
+            <p className="lp gen">Quality Assurance</p>
           </section>
 
           {/* --------------------SECTION------------------------ */}
 
           <h5>Experience</h5>
           <div>
+          <a href="https://bitly.com/" rel="noreferrer" target="_blank">
           <img className="logo" src={bitly} height="40px" width="40px" alt="bitly" />
-            <a href="https://bitly.com/" rel="noreferrer" target="_blank">
-              
-            </a>
+           </a>
             <p className="h-span">
               <b>Bitly</b>
-              <span>Summer 2021</span>
+              <span>Summer 2021 - Present</span>
             </p>
             <p className="h-span">
               <i>Back-End Engineering Intern</i>
@@ -126,8 +125,8 @@ class Resume extends React.Component {
 
           <h5>Education</h5>
           <div>
+          <a href="https://www.waketech.edu/" rel="noreferrer" target="_blank">
           <img className="logo" id="wake" src={waketech} height="40px" width="40px" alt="waketech" />
-            <a href="https://www.waketech.edu/" rel="noreferrer" target="_blank">
             </a>
             <p className="h-span">
               <b>Wake Tech Community </b>
