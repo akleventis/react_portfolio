@@ -44,6 +44,9 @@
     padding: 5px 0 3px 0;
   }
 
+   .code:hover {
+    color: var(--terminal-text);
+   }
 
   /* School & Work Info Positioning */
   .inner h4 {

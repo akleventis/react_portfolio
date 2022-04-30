@@ -1,14 +1,6 @@
 import React from "react";
-import bitly from "../assets/images/bitly.png";
-import pylogo from "../assets/images/pylogo.png";
-import gologo from "../assets/images/gologo.png";
-import waketech from "../assets/images/wake.png";
-import javalogo from "../assets/images/javalogo.png";
-import jslogo from "../assets/images/jslogo.png";
-import sql from "../assets/images/sql.png";
-import reactlogo from "../assets/images/reactlogo.png";
 import "./resume.css";
-import link from "../assets/images/site.png";
+import {SiteImg, BitlyImg, PyImg, GoImg, WakeImg, JavaImg, JsImg, SqlImg, ReactImg} from "../assets/index.js"
 import resume from "../docs/resume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -36,7 +28,7 @@ class Resume extends React.Component {
 
             <a
               href={resume}
-              style={{ backgroundImage: `url(${link})` }}
+              style={{ backgroundImage: `url(${SiteImg})` }}
               target="_blank"
               name="site-link"
               className="site-link r-link"
@@ -49,22 +41,22 @@ class Resume extends React.Component {
           <h5>Languages & Tools</h5>
           <div className="lang-container">
             <a href="https://golang.org/" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="400" src={gologo} height="50px" width="50px" alt="golang logo" />
+              <img data-aos={"zoom-in"} data-aos-duration="400" src={GoImg} height="50px" width="50px" alt="golang logo" />
             </a>
             <a href="https://www.javascript.com/" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="700" src={jslogo} height="50px" width="50px" alt="JavaScript logo" />
+              <img data-aos={"zoom-in"} data-aos-duration="700" src={JsImg} height="50px" width="50px" alt="JavaScript logo" />
             </a>
             <a href="https://reactjs.org/" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="1000" src={reactlogo} height="50px" width="50px" alt="React logo" />
+              <img data-aos={"zoom-in"} data-aos-duration="1000" src={ReactImg} height="50px" width="50px" alt="React logo" />
             </a>
             <a href="https://www.python.org/" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="1300" src={pylogo} height="50px" width="50px" alt="python logo" />
+              <img data-aos={"zoom-in"} data-aos-duration="1300" src={PyImg} height="50px" width="50px" alt="python logo" />
             </a>
             <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="1600" src={javalogo} height="50px" width="50px" alt="java logo" />
+              <img data-aos={"zoom-in"} data-aos-duration="1600" src={JavaImg} height="50px" width="50px" alt="java logo" />
             </a>
             <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="1900" src={sql} height="50px" width="50px" alt="sql logo" />
+              <img data-aos={"zoom-in"} data-aos-duration="1900" src={SqlImg} height="50px" width="50px" alt="sql logo" />
             </a>
           </div>
 
@@ -86,7 +78,7 @@ class Resume extends React.Component {
           <h5>Experience</h5>
           <div>
           <a href="https://bitly.com/" rel="noreferrer" target="_blank">
-          <img className="logo" src={bitly} height="40px" width="40px" alt="bitly" />
+          <img className="logo" src={BitlyImg} height="40px" width="40px" alt="bitly" />
            </a>
             <p className="h-span">
               <b>Bitly</b>
@@ -126,7 +118,7 @@ class Resume extends React.Component {
           <h5>Education</h5>
           <div>
           <a href="https://www.waketech.edu/" rel="noreferrer" target="_blank">
-          <img className="logo" id="wake" src={waketech} height="40px" width="40px" alt="waketech" />
+          <img className="logo" id="wake" src={WakeImg} height="40px" width="40px" alt="waketech" />
             </a>
             <p className="h-span">
               <b>Wake Tech Community </b>

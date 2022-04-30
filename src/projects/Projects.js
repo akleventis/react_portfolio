@@ -1,10 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
 import React from "react"
-import dog from "../assets/images/dog.png"
-import cat from "../assets/images/cat.png"
-import site from "../assets/images/site.png"
-import git from "../assets/images/git.png"
+import { DogImg, CatImg, SiteImg, GitImg } from "../assets/index.js"
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import "./projects.css"
@@ -30,8 +27,8 @@ class Projects extends React.Component {
                 <h4>Projects</h4>
                 <div className="row">
                   <div data-aos={"zoom-in"} data-aos-duration="800" className="box">
-                    <a href="https://alexcod.es/go_restapi" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${git})`}} className="git"></a>
-                    <img src={dog} alt="dog" />
+                    <a href="https://alexcod.es/go_restapi" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${GitImg})`}} className="git"></a>
+                    <img src={DogImg} alt="dog" />
                     <p className="text">
                       Go REST API with MySql database. Endpoint and handler functions for GET, POST, PATCH, and DELETE requests. Integrated test files for all handlers. Hit endpoints with Postman to verify correct HTTP codes/database actions.
                     </p>
@@ -41,9 +38,9 @@ class Projects extends React.Component {
                     </div>
                   </div>
                   <div data-aos={"zoom-in"} data-aos-duration="800" className="box">
-                    <a href="https://alexcod.es/reactapi-github" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${git})`}} className="git"></a>
-                    <img src={cat} alt="cat" />
-                    <a href="https://alexcod.es/reactapi" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${site})`}} name="site-link" className="site-link"></a>
+                    <a href="https://alexcod.es/reactapi-github" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${GitImg})`}} className="git"></a>
+                    <img src={CatImg} alt="cat" />
+                    <a href="https://alexcod.es/reactapi" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${SiteImg})`}} name="site-link" className="site-link"></a>
                     <p className="text">
                       Interactive website built with React & TypeScript that fetches and displays assets/images from these <b><a className="in-link" href="https://thecatapi.com/" target="blank">cat</a></b> and <b><a href="https://thedogapi.com/" className="in-link" target="blank">dog</a></b> API's. User is able to interact with site through UI or keyboard. 
                     </p>

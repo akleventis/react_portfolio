@@ -3,10 +3,7 @@ import Header from "./headers/Header";
 import Resume from "./resume/Resume";
 import Projects from "./projects/Projects";
 import Footer from "./headers/Footer";
-import waketech from "./assets/images/wake.png"
-import wake2 from "./assets/images/wake2.png"
-import site from "./assets/images/site.png"
-import site2 from "./assets/images/site2.png"
+import {SiteImg, Site2Img, WakeImg, Wake2Img} from "./assets/index.js"
 
 class App extends React.Component {
   constructor(props) {
@@ -21,9 +18,9 @@ class App extends React.Component {
     let x = 0;
     mode.addEventListener("change", () => {
       document.body.classList.toggle("light-mode");
-      wake_tech.src = x % 2 === 1 ? `${waketech}` : `${wake2}`;
-      sites[1].style.backgroundImage = x % 2 === 1 ? `url(${site})` : `url(${site2})`;
-      sites[0].style.backgroundImage = x % 2 === 1 ? `url(${site})` : `url(${site2})`;
+      wake_tech.src = x % 2 === 1 ? `${WakeImg}` : `${Wake2Img}`;
+      sites[1].style.backgroundImage = x % 2 === 1 ? `url(${SiteImg})` : `url(${Site2Img})`;
+      sites[0].style.backgroundImage = x % 2 === 1 ? `url(${SiteImg})` : `url(${Site2Img})`;
       x++;
     });
   }

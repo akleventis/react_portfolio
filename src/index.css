@@ -15,18 +15,19 @@
 
 .light-mode {
   --body-font: #000000;
-  --terminal-background: #ffffff;
-  --hover-background: #ffffff;
-  --hf-background: #f4f4f4;
-  --body: #e9eef8;
-  --hover-dark: #ffffff;
-  --hover-border: #317a65;
+  --terminal-background: #fff7dc;
+  --hover-background: #f6b3b344;
+  --hf-background: #f4bfbf;
+  --body: #dfdfdf;
+  --hover-dark: #f6f6f6;
+  --hover-border: #f6b3b3;
   --terminal-text: #0b2208;
   --footer-a: #000000;
   --site-hover: #a2cae667;
 }
 
 body {
+  cursor: url(./assets/cursors/default.png) 2 0, auto;
   margin: 0;
   font-family: "Noto Sans JP", sans-serif;
   background-color: var(--body);
@@ -42,7 +43,7 @@ a {
   text-decoration: none;
   color: var(--body-font);
   transition: 500ms;
-  cursor: pointer;
+  cursor: url(./assets/cursors/pointer.png), default !important;
 }
 a:hover {
   color: var(--link-hover);

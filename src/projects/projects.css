@@ -31,7 +31,6 @@
   }
   
   .site-link {
-    /* background-image: `url(images/site.png)`; */
     background-size: cover;
     height: 40px;
     position: absolute;

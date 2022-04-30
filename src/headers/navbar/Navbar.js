@@ -1,7 +1,6 @@
 import React from "react";
 import "./navbar.css";
-import moon from "../../assets/images/moon.png";
-import sun from "../../assets/images/sun.png";
+import { SunImg, MoonImg } from "../../assets/index.js"
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -13,12 +12,12 @@ class Navbar extends React.Component {
     return (
       <div className="heading" id="heading">
         <div className="switch-container">
-          <img src={moon} alt="dark" />
+          <img src={MoonImg} alt="dark" />
           <label className="switch">
             <input type="checkbox" />
             <span className="slider-container round"></span>
           </label>
-          <img src={sun}  alt="light" />
+          <img src={SunImg}  alt="light" />
         </div>
         <h3>Alex Leventis</h3>
       </div>

@@ -24,6 +24,7 @@
     top: 20%;
   }
   .switch {
+    cursor: url(../../assets/cursors/pointer.png), default !important;
     position: relative;
     display: inline-block;
     width: 30px;
@@ -43,7 +44,6 @@
 
   .slider-container {
     position: absolute;
-    cursor: pointer;
     top: 0;
     left: 0;
     right: 0;

@@ -3,16 +3,8 @@ import "./terminal.css";
 import Typewriter from 'typewriter-effect/dist/core';
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import MyImage from '../dynamic_div/MyImage'
-import Snow from '../dynamic_div/Snow' 
-import Bike from '../dynamic_div/Bike' 
-import Paintings from '../dynamic_div/Paintings' 
-import Piano from '../dynamic_div/Piano' 
-import Uke from '../dynamic_div/Uke' 
 import resume from '../docs/resume.pdf'
-import Computer from '../dynamic_div/Code'
-import Skate from '../dynamic_div/Skate'
-import Raleigh from '../dynamic_div/Raleigh'
+import {Skating, Winter, Biking, Code, Art, Piano, Ukulele, MyImage, Raleigh} from '../dynamic_div/dynamicDiv.js'
 
 
 class Terminal extends React.Component {
@@ -24,13 +16,13 @@ class Terminal extends React.Component {
   }
 
   componentDidMount() {
-    const snow = () => this.setState({divSection: <Snow />});
-    const bike = () => this.setState({divSection: <Bike />});
-    const painting = () => this.setState({divSection: <Paintings />});
+    const snow = () => this.setState({divSection: <Winter />});
+    const bike = () => this.setState({divSection: <Biking />});
+    const painting = () => this.setState({divSection: <Art />});
     const piano = () => this.setState({divSection: <Piano />});
-    const uke = () => this.setState({divSection: <Uke />});
-    const code = () => this.setState({divSection: <Computer />});
-    const skate = () => this.setState({divSection: <Skate />});
+    const uke = () => this.setState({divSection: <Ukulele />});
+    const code = () => this.setState({divSection: <Code />});
+    const skate = () => this.setState({divSection: <Skating />});
     const raleigh = () => this.setState({divSection: <Raleigh />})
 
     AOS.init();
@@ -51,14 +43,14 @@ class Terminal extends React.Component {
         ["a", " hey i'm alex"],
         ["b", '<a id="r" target="_blank">resume.pdf</a>'],
         ["c", '<a id="raleigh">Raleigh, Nc</a>'],
-        ["d", ' [<a id="skate">"Skating"</a>, <a id="snow">"Winter!"</a>, <a id="bike">"Biking"</a>, <a id="comp">"Code"</a>, <a id="paint">"Art"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
+        ["d", ' [<a id="skate">"Skating"</a>, <a id="snow">"Snowboarding"</a>, <a id="bike">"Biking"</a>, <a id="comp">"Code"</a>, <a id="paint">"Art"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
         ["e", "<a href='https://www.waketech.edu/programs-courses/credit/computer-programming' target='_blank'>Associates of Applied Science in Computer Programming and Development</a>"],
         [
           "f",
           ' [<a href="http://alexcod.es/github" target="_blank">github.com</a>, <a href="http://alexcod.es/linkedin" target="_blank">linkedin.com</a>]',
         ],
         ["g", '<a target="_blank" href="mailto:alex.leventis1@gmail.com">alex.leventis1@gmail.com</a>'],
-        ["h", '<a style="cursor:pointer">Click me!</a>'],
+        ["h", '<a>Click me!</a>'],
       ];
     
     function terminal(key, value) {
