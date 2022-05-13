@@ -2,9 +2,12 @@ import "./dynamicDiv.css";
 import "aos/dist/aos.css";
 import AOS from 'aos';
 import ImageGallery from "react-image-gallery";
+import emailjs from "@emailjs/browser";
 import "react-image-gallery/styles/css/image-gallery.css";
 import {SkateImg, CodeImg, WaterImg, SmileImg, EyeImg, FlowImg, UkeImg, YoutubeImg, GithubImg, MeImg, BikeMov, SnowMov, PianoMov} from "../assets/index.js"
 import { useEffect } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Skating = () => {
      return   <img className="my_image_click" src={SkateImg} alt="skate"/>
@@ -88,3 +91,32 @@ export const Raleigh = () => {
     return <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d206989.87646166902!2d-78.785140231539!3d35.84368666207371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac5a2f9f51e0f7%3A0x6790b6528a11f0ad!2sRaleigh%2C%20NC!5e0!3m2!1sen!2sus!4v1633447863939!5m2!1sen!2sus" width="600" height="450" style={{border:"0"}} title="Raleigh" className="my_image_click" loading="lazy"></iframe>
 }
 
+export const Email = () => {
+    const notify = (msg) => toast.success(msg)
+    const notifyError = (msg) => toast.error(msg)
+
+    const [user_id, service_id, template_id] = [process.env.REACT_APP_EMAIL_USER, process.env.REACT_APP_EMAIL_SERVICE, process.env.REACT_APP_EMAIL_TEMPLATE]
+    const handleEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm(service_id, template_id, e.target, user_id).then(
+            (result) => {
+                notify("Your message has been delivered");
+                document.getElementById('email-form').reset();
+            },
+            (error) => {
+                notifyError("error sending email")
+            }
+        )
+    }
+    return( 
+        <div className="my_image_click" style={{border: "none"}}>
+            <form id='email-form' onSubmit={handleEmail} >
+                <input name="from_name" className="e-input" autoComplete="off" autoCorrect="off" required type="text" placeholder="Name" />
+                <input name="from_email" className="e-input" autoComplete="off" autoCorrect="off" required type="text" placeholder="Email" />
+                <textarea name="message" className="e-input" required placeholder="Message"></textarea>
+                <input type="submit" className="send" value="Send"/>
+            </form>
+            <ToastContainer pauseOnFocusLoss={false} pauseOnHover={false} />
+        </div>
+  )
+}

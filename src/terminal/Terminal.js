@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect/dist/core';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import resume from '../docs/resume.pdf'
-import {Skating, Winter, Biking, Code, Art, Piano, Ukulele, MyImage, Raleigh} from '../dynamic_div/dynamicDiv.js'
+import {Skating, Winter, Biking, Code, Art, Piano, Ukulele, MyImage, Raleigh, Email} from '../dynamic_div/dynamicDiv.js'
 
 
 class Terminal extends React.Component {
@@ -24,6 +24,7 @@ class Terminal extends React.Component {
     const code = () => this.setState({divSection: <Code />});
     const skate = () => this.setState({divSection: <Skating />});
     const raleigh = () => this.setState({divSection: <Raleigh />})
+    const email = () => this.setState({divSection: <Email />})
 
     AOS.init();
 
@@ -49,7 +50,7 @@ class Terminal extends React.Component {
           "f",
           ' [<a href="http://alexcod.es/github" target="_blank">github.com</a>, <a href="http://alexcod.es/linkedin" target="_blank">linkedin.com</a>]',
         ],
-        ["g", '<a target="_blank" href="mailto:alex.leventis1@gmail.com">alex.leventis1@gmail.com</a>'],
+        ["g", '<a id="email">alex.leventis1@gmail.com</a>'],
         ["h", '<a>Click me!</a>'],
       ];
     
@@ -89,6 +90,11 @@ class Terminal extends React.Component {
           document.getElementById(e).addEventListener('click', event => {
             mapping[e]();
           }) 
+        })
+      }
+      if (i===8) {
+        document.getElementById('email').addEventListener('click', e => {
+          email();
         })
       }
       if (i < lst1.length) {

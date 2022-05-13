@@ -35,6 +35,61 @@
     width: 103px;
 }
 
+/* Email form  */
+form { max-width:400px; margin:20px auto; }
+
+.e-input {
+    color: var(--body-font);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid var(--blue-border);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+  
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
+}
+.e-input:focus { 
+    border:2px solid var(--hover-border); 
+    background-color: var(--hover-dark);
+}
+
+textarea {
+  height: 10em;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background-color: var(--hf-background);
+  border: 2px solid var(--blue-border);
+  border-radius:5px;
+  cursor: pointer;
+  color: var(--body-font);
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+  cursor: url('../assets/cursors/pointer.png'), default !important;
+}
+[type="submit"]:hover { border: 2px solid var(--hover-border); }
+
+
 @media (max-width: 963px){
     .img-link {
         position: absolute;
@@ -53,5 +108,8 @@
     .my_image_click {
         height: 300px;
         width: 300px;
+    }
+    textarea {
+        height: 5em;
     }
 }
