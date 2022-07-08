@@ -29,8 +29,11 @@ class Projects extends React.Component {
                   <div data-aos={"zoom-in"} data-aos-duration="800" className="box">
                     <a href="https://alexcod.es/go_restapi" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${GitImg})`}} className="git"></a>
                     <img src={DogImg} alt="dog" />
-                    <p className="text">
+                    {/* <p className="text">
                       Go REST API with MySql database. Endpoint and handler functions for GET, POST, PATCH, and DELETE requests. Integrated test files for all handlers. Hit endpoints with Postman to verify correct HTTP codes/database actions.
+                    </p> */}
+                    <p className="text">
+                      wip
                     </p>
                     <div className="lang">
                       <a href="https://go.dev/" rel="noreferrer" target="_blank">Go</a>
@@ -41,8 +44,11 @@ class Projects extends React.Component {
                     <a href="https://alexcod.es/reactapi-github" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${GitImg})`}} className="git"></a>
                     <img src={CatImg} alt="cat" />
                     <a href="https://alexcod.es/reactapi" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${SiteImg})`}} name="site-link" className="site-link"></a>
-                    <p className="text">
+                    {/* <p className="text">
                       Interactive website built with React & TypeScript that fetches and displays assets/images from these <b><a className="in-link" href="https://thecatapi.com/" target="blank">cat</a></b> and <b><a href="https://thedogapi.com/" className="in-link" target="blank">dog</a></b> API's. User is able to interact with site through UI or keyboard. 
+                    </p> */}
+                    <p className="text">
+                      wip
                     </p>
                     <div className="lang">
                       <a href="https://reactjs.org/" rel="noreferrer" target="_blank">React</a>
