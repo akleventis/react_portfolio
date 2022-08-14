@@ -1,68 +1,87 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
-import React from "react"
-import { DogImg, CatImg, SiteImg, GitImg } from "../assets/index.js"
-import AOS from 'aos';
+import React from "react";
+import { CatImg, GitImg, UhpImg } from "../assets/index.js";
+import AOS from "aos";
 import "aos/dist/aos.css";
-import "./projects.css"
+import "./projects.css";
 
-class Projects extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    };
+const p_data = [
+  {
+    img: UhpImg,
+    p_url: "https://unitedhouseproductions.com",
+    git_url: "https://github.com/akleventis/united_house_server",
+    text: "United House Productions LLC Go RESTful API backend server for live front-end application (hyperlink above). Stripe checkout integration for secure client-side purchasing. Postgresql database for storing products, events, and dj information. Features IP address rate limiting, auth token requests for admin actions, and unit tests (wip)",
+    langs: [
+      { Name: "Go", URL: "https://go.dev/" },
+      { Name: "Postgresql", URL: "https://www.postgresql.org/" },
+    ],
+  },
+  {
+    img: CatImg,
+    p_url: "",
+    git_url: "https://alexcod.es/reactapi-github",
+    text: "wip",
+    langs: [{ Name: "React", URL: "https://reactjs.org/" }],
+  },
+];
 
-    componentDidMount() {
-      AOS.init({
-        duration: 0
-      });
-    }
-
-    render() {
-        return (
-            
-            <div className="outer">
-            <a href="#projects" id="projects"></a>  
-              <div className="inner two">
-                <h4>Projects</h4>
-                <div className="row">
-                  <div data-aos={"zoom-in"} data-aos-duration="800" className="box">
-                    <a href="https://alexcod.es/go_restapi" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${GitImg})`}} className="git"></a>
-                    <img src={DogImg} alt="dog" />
-                    {/* <p className="text">
-                      Go REST API with MySql database. Endpoint and handler functions for GET, POST, PATCH, and DELETE requests. Integrated test files for all handlers. Hit endpoints with Postman to verify correct HTTP codes/database actions.
-                    </p> */}
-                    <p className="text">
-                      wip
-                    </p>
-                    <div className="lang">
-                      <a href="https://go.dev/" rel="noreferrer" target="_blank">Go</a>
-                      <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank">SQL</a>
-                    </div>
-                  </div>
-                  <div data-aos={"zoom-in"} data-aos-duration="800" className="box">
-                    <a href="https://alexcod.es/reactapi-github" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${GitImg})`}} className="git"></a>
-                    <img src={CatImg} alt="cat" />
-                    <a href="https://alexcod.es/reactapi" rel="noreferrer" target="_blank" style={{backgroundImage: `url(${SiteImg})`}} name="site-link" className="site-link"></a>
-                    {/* <p className="text">
-                      Interactive website built with React & TypeScript that fetches and displays assets/images from these <b><a className="in-link" href="https://thecatapi.com/" target="blank">cat</a></b> and <b><a href="https://thedogapi.com/" className="in-link" target="blank">dog</a></b> API's. User is able to interact with site through UI or keyboard. 
-                    </p> */}
-                    <p className="text">
-                      wip
-                    </p>
-                    <div className="lang">
-                      <a href="https://reactjs.org/" rel="noreferrer" target="_blank">React</a>
-                      <a href="https://www.typescriptlang.org/" rel="noreferrer"  target="_blank">TypeScript</a>
-                    </div>
-                  </div>
-                  
-                </div>
-                <p className="more">- more side projects @ <a className="in-link" href="http://alexcod.es/github" rel="noreferrer" target="_blank">alexcod.es/github </a>-</p>
-                </div>
-                
-              </div>
-        )
-    }
+export const Project = ({ img, p_url, git_url, text, langs }) => {
+  return (
+    <div data-aos={"zoom-in"} data-aos-duration="800" className="box">
+      <a href={git_url} rel="noreferrer" target="_blank" style={{ backgroundImage: `url(${GitImg})` }} className="git" ></a>
+      <a href={p_url} rel="noreferrer" target="_blank" name="site-link" className="p-img-container" >
+        <img src={img} className="p_img" alt="" />
+      </a>
+      <p className="text">{text}</p>
+      <div className="lang">
+        {langs.map((item, index) => {
+          return <a key={index} href={item.URL} rel="noreferrer" target="_blank">{item.Name}</a>
+        })}
+      </div>
+    </div>
+  );
 };
 
-export default Projects
+class Projects extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  componentDidMount() {
+    AOS.init({
+      duration: 0,
+    });
+  }
+
+  render() {
+    return (
+      <div className="outer">
+        <a href="#projects" id="projects"></a>
+        <div className="inner two">
+          <h4>Projects</h4>
+          <div className="row">
+            {p_data.map((item, index) => {
+              return <Project img={item.img} key={index} p_url={item.p_url} git_url={item.git_url} text={item.text} langs={item.langs} />
+            })}
+          </div>
+          <p className="more">
+            - more side projects @{" "}
+            <a
+              className="in-link"
+              href="http://alexcod.es/github"
+              rel="noreferrer"
+              target="_blank"
+            >
+              alexcod.es/github{" "}
+            </a>
+            -
+          </p>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Projects;

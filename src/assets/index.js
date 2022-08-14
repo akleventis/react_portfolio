@@ -27,6 +27,7 @@ export const CatImg = require('./projects/cat.png').default
 export const SiteImg = require('./projects/site.png').default
 export const Site2Img = require('./projects/site2.png').default
 export const GitImg = require('./projects/git.png').default
+export const UhpImg = require('./projects/uhp.png').default
 
 // Resume //
 export const BitlyImg = require('./resume/bitly.png').default
