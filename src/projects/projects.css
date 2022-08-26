@@ -59,7 +59,6 @@
   }
   
   .p_img {
-    width: 200px;
     height: 100px;
   }
   
@@ -75,7 +74,7 @@
     width: 100px;
     border: 2px solid transparent;
     border-radius: 30px;
-    margin: 20px 5px 0 5px;
+    margin: 35px 5px 0 5px;
     padding: 5px 0 3px 0;
     -webkit-transition: 1s;
     -moz-transition: 1s;

@@ -43,34 +43,38 @@ class Resume extends React.Component {
             <a href="https://golang.org/" rel="noreferrer" target="_blank" alt="source">
               <img data-aos={"zoom-in"} data-aos-duration="400" src={GoImg} height="50px" width="50px" alt="golang logo" />
             </a>
+            <a href="https://www.python.org/" rel="noreferrer" target="_blank" alt="source">
+              <img data-aos={"zoom-in"} data-aos-duration="1300" src={PyImg} height="50px" width="50px" alt="python logo" />
+            </a>
             <a href="https://www.javascript.com/" rel="noreferrer" target="_blank" alt="source">
               <img data-aos={"zoom-in"} data-aos-duration="700" src={JsImg} height="50px" width="50px" alt="JavaScript logo" />
             </a>
             <a href="https://reactjs.org/" rel="noreferrer" target="_blank" alt="source">
               <img data-aos={"zoom-in"} data-aos-duration="1000" src={ReactImg} height="50px" width="50px" alt="React logo" />
             </a>
-            <a href="https://www.python.org/" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="1300" src={PyImg} height="50px" width="50px" alt="python logo" />
-            </a>
-            <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="1600" src={JavaImg} height="50px" width="50px" alt="java logo" />
-            </a>
             <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank" alt="source">
               <img data-aos={"zoom-in"} data-aos-duration="1900" src={SqlImg} height="50px" width="50px" alt="sql logo" />
             </a>
+            {/* <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html" rel="noreferrer" target="_blank" alt="source">
+              <img data-aos={"zoom-in"} data-aos-duration="1600" src={JavaImg} height="50px" width="50px" alt="java logo" />
+            </a> */}
           </div>
 
-          <h5>Technical</h5>
-          <section className="lang-container">
-            <p className="lp">Git Workflows</p>
-            <p className="lp">Agile Software Development</p>
-          </section>
           <h5>General</h5>
           <section className="lang-container">
             <p className="lp gen">Team player</p>
             <p className="lp gen">Analytical</p>
             <p className="lp gen">Research-oriented</p>
             <p className="lp gen">Quality Assurance</p>
+          </section>
+
+          <h5>Technical</h5>
+          <section className="lang-container">
+            <p className="lp">Git Workflows</p>
+            <p className="lp">Agile Software Development</p>
+            <p className="lp">RESTful architecture</p>
+            <p className="lp">Jira Software</p>
+            <p className="lp">Google Cloud</p>
           </section>
 
           {/* --------------------SECTION------------------------ */}
@@ -82,7 +86,7 @@ class Resume extends React.Component {
            </a>
             <p className="h-span">
               <b>Bitly</b>
-              <span>Summer 2021 - Present</span>
+              <span>June 2021 - Present</span>
             </p>
             <p className="h-span">
               <i>Back-End Engineering Intern</i>
@@ -92,16 +96,12 @@ class Resume extends React.Component {
 
 
           <ul>
-            <li><span>Go back-end development for Micro services</span></li>
-            <li><span>
-              Contributed to alpha release for new Bitly product{" "}
-              <a style={{ fontStyle: "italic" }} href="https://bit.ly/link_launchpad_blog" target="_blank" rel="noreferrer">
-                "Link Launchpads"
-              </a></span>
-            </li>
-            <li><span>Involved in migration of Python based architecture to Go</span></li>
-            <li><span>Go automated unit test functions</span></li>
-            <li><span>GitHub and Jenkins for the continuous integration and deployment</span></li>
+            <li><span>Implemented REST services with microservices architecture  (Golang)</span></li>
+            <li><span>Practiced Agile software development</span></li>
+            <li><span>Involved in migration of Python-based services to Go </span></li>
+            <li><span>Created Go automated unit tests</span></li>
+            <li><span>Used Github and Jenkins for continuous integration and deployment</span></li>
+            <li><span>Exercise daily code reviews</span></li>
             <a href="https://golang.org/" data-aos={"flip-down"} data-aos-duration="1200" style={{top: '10%'}} target="_blank" rel="noreferrer" className="code">
               Go
             </a>

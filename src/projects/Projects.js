@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
 import React from "react";
-import { CatImg, GitImg, UhpImg } from "../assets/index.js";
+import { AutoTab, GitImg, UhpImg } from "../assets/index.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./projects.css";
@@ -18,11 +18,11 @@ const p_data = [
     ],
   },
   {
-    img: CatImg,
-    p_url: "",
-    git_url: "https://alexcod.es/reactapi-github",
-    text: "wip",
-    langs: [{ Name: "React", URL: "https://reactjs.org/" }],
+    img: AutoTab,
+    p_url: "https://bit.ly/auto-tab-groups",
+    git_url: "https://github.com/furofo/TabGroupExtension",
+    text: "Chrome Auto Tab Group Extension. Significantly updated functionality of application which resulted in an increased user count from 15 to around 150 while maintaining a 4.5 star rating. Revamped overall styling, added ability to add multiple groups, zoom, 'go back' functionality, ungroup if no matching text in url, and an overall clean-up/refactor throughout the codebase.",
+    langs: [{ Name: "JavaScript", URL: "https://www.javascript.com/" }],
   },
 ];
 

@@ -22,8 +22,8 @@ export const PianoMov = require('./terminal/piano.mp4').default
 export const SnowMov = require('./terminal/snow.mp4').default
 
 // Projects //
-export const DogImg = require('./projects/dog.png').default
-export const CatImg = require('./projects/cat.png').default
+// export const DogImg = require('./projects/dog.png').default
+export const AutoTab = require('./projects/autotab.png').default
 export const SiteImg = require('./projects/site.png').default
 export const Site2Img = require('./projects/site2.png').default
 export const GitImg = require('./projects/git.png').default
