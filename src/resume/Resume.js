@@ -70,13 +70,24 @@ class Resume extends React.Component {
 
           <h5>Technical</h5>
           <section className="lang-container">
-            <p className="lp">Git Workflows</p>
-            <p className="lp">Agile Software Development</p>
-            <p className="lp">RESTful architecture</p>
-            <p className="lp">Jira Software</p>
-            <p className="lp">Google Cloud</p>
+            <a href="https://git-scm.com/" rel="noreferrer" target="_blank">
+              <p className="lp">Git Workflows</p>
+              </a>
+            <a href="https://en.wikipedia.org/wiki/Agile_software_development" rel="noreferrer" target="_blank">
+              <p className="lp">Agile Software Development</p>
+              </a>
+            <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" rel="noreferrer" target="_blank">
+              <p className="lp">RESTful Architecture</p>
+            </a>
           </section>
-
+          <section className="lang-container">
+            <a href="https://www.atlassian.com/software/jira" rel="noreferrer" target="_blank">
+              <p className="lp">Jira Software</p>
+            </a>
+            <a href="https://cloud.google.com/" rel="noreferrer" target="_blank">
+              <p className="lp">Google Cloud Platform</p>
+            </a>
+          </section>
           {/* --------------------SECTION------------------------ */}
 
           <h5>Experience</h5>
@@ -138,7 +149,7 @@ class Resume extends React.Component {
             <li><span>Computing Fundamentals I & II</span></li>
             <li><span>Database Programming</span></li>
             <li><span>Web Markup and Scripting (JavaScript)</span></li>
-            <li><span>Software Quality Assurance</span></li>
+            <li><span>Cloud Application Development</span></li>
             <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html" data-aos={"flip-down"} data-aos-duration="1200" style={{top: '0%'}} target="_blank" rel="noreferrer" className="code">
               Java
             </a>
