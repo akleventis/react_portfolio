@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect/dist/core';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import resume from '../docs/resume.pdf'
-import {Skating, Winter, Biking, Code, Art, Piano, Ukulele, MyImage, Raleigh, Email} from '../dynamic_div/dynamicDiv.js'
+import {Disc, Winter, Taco, Code, Travel, Piano, Ukulele, MyImage, Raleigh, Email} from '../dynamic_div/dynamicDiv.js'
 
 
 class Terminal extends React.Component {
@@ -17,12 +17,12 @@ class Terminal extends React.Component {
 
   componentDidMount() {
     const snow = () => this.setState({divSection: <Winter />});
-    const bike = () => this.setState({divSection: <Biking />});
-    const painting = () => this.setState({divSection: <Art />});
+    const disc = () => this.setState({divSection: <Disc />});
+    const taco = () => this.setState({divSection: <Taco />});
     const piano = () => this.setState({divSection: <Piano />});
     const uke = () => this.setState({divSection: <Ukulele />});
     const code = () => this.setState({divSection: <Code />});
-    const skate = () => this.setState({divSection: <Skating />});
+    const travel = () => this.setState({divSection: <Travel />});
     const raleigh = () => this.setState({divSection: <Raleigh />})
     const email = () => this.setState({divSection: <Email />})
 
@@ -44,7 +44,7 @@ class Terminal extends React.Component {
         ["a", " hey i'm alex"],
         ["b", '<a id="r" target="_blank">resume.pdf</a>'],
         ["c", '<a id="raleigh">Raleigh, Nc</a>'],
-        ["d", ' [<a id="skate">"Skating"</a>, <a id="snow">"Snowboarding"</a>, <a id="bike">"Biking"</a>, <a id="comp">"Code"</a>, <a id="paint">"Art"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
+        ["d", ' [<a id="travel">"Travel"</a>, <a id="snow">"Snow"</a>, <a id="disc">"Disc Golf"</a>, <a id="comp">"Code"</a>, <a id="taco">"Taco"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
         ["e", "<a href='https://www.waketech.edu/programs-courses/credit/computer-programming' target='_blank'>Associates of Applied Science in Computer Programming and Development</a>"],
         [
           "f",
@@ -82,10 +82,10 @@ class Terminal extends React.Component {
         })
       }
       if (i === 5){
-        const mapping = {'snow': snow, 'bike': bike, 'paint': painting,
+        const mapping = {'snow': snow, 'taco': taco, 'disc': disc,
                           'piano': piano, 'uke': uke, 'comp': code,
-                          'skate': skate};
-        const ids = ['snow', 'bike', 'paint', 'piano', 'uke', 'comp', 'skate']
+                          'travel': travel};
+        const ids = ['snow', 'taco', 'travel', 'piano', 'uke', 'comp', 'disc']
         ids.forEach(e => {
           document.getElementById(e).addEventListener('click', event => {
             mapping[e]();

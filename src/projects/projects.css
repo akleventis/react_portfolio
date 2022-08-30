@@ -53,7 +53,7 @@
   
   .box p {
     border-radius: 5px;
-    margin-top: 3px;
+    margin-top: 0;
     padding: 7px;
     height: 130px;
   }
@@ -74,7 +74,7 @@
     width: 100px;
     border: 2px solid transparent;
     border-radius: 30px;
-    margin: 35px 5px 0 5px;
+    margin: 37px 5px 0 5px;
     padding: 5px 0 3px 0;
     -webkit-transition: 1s;
     -moz-transition: 1s;

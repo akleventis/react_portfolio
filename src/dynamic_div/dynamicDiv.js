@@ -1,16 +1,27 @@
 import "./dynamicDiv.css";
 import "aos/dist/aos.css";
 import AOS from 'aos';
-import ImageGallery from "react-image-gallery";
+// import ImageGallery from "react-image-gallery";
 import emailjs from "@emailjs/browser";
 import "react-image-gallery/styles/css/image-gallery.css";
-import {SkateImg, CodeImg, WaterImg, SmileImg, EyeImg, FlowImg, UkeImg, YoutubeImg, GithubImg, MeImg, BikeMov, SnowMov, PianoMov} from "../assets/index.js"
+import {ToledoImg, CodeImg, UkeImg, YoutubeImg, GithubImg, MeImg, DiscImg, TacoImg, SnowMov, PianoMov} from "../assets/index.js"
 import { useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-export const Skating = () => {
-     return   <img className="my_image_click" src={SkateImg} alt="skate"/>
+// export const Skating = () => {
+//      return   <img className="my_image_click" src={SkateImg} alt="skate"/>
+// }
+export const Travel = () => {
+     return   <img className="my_image_click" src={ToledoImg} alt="skate"/>
+}
+
+export const Taco = () => {
+     return   <img className="my_image_click" src={TacoImg} alt="skate"/>
+}
+
+export const Disc = () => {
+     return   <img className="my_image_click" src={DiscImg} alt="skate"/>
 }
 
 export const Winter = () => {
@@ -22,14 +33,14 @@ export const Winter = () => {
       )
 }
 
-export const Biking = () => {
-    return( 
-        <video width="320" className="my_image_click" height="240" controls loop autoPlay muted>
-        <source src={BikeMov} type="video/mp4" />
-        Your browser does not support the video tag.
-        </video>
-      )
-}
+// export const Biking = () => {
+//     return( 
+//         <video width="320" className="my_image_click" height="240" controls loop autoPlay muted>
+//         <source src={BikeMov} type="video/mp4" />
+//         Your browser does not support the video tag.
+//         </video>
+//       )
+// }
 
 export const Code = () => {
     useEffect(() => {
@@ -48,14 +59,14 @@ export const Code = () => {
       );
 }
 
-export const Art = () => {
-    const images = [ { original: WaterImg, thumbnail: WaterImg, }, { original: SmileImg, thumbnail: SmileImg, }, { original: EyeImg, thumbnail: EyeImg, }, { original: FlowImg, thumbnail: FlowImg, }, ];
-    return (
-    <div className="my_image_click">
-        <ImageGallery items={images} />
-    </div>
-    );
-}
+// export const Art = () => {
+//     const images = [ { original: WaterImg, thumbnail: WaterImg, }, { original: SmileImg, thumbnail: SmileImg, }, { original: EyeImg, thumbnail: EyeImg, }, { original: FlowImg, thumbnail: FlowImg, }, ];
+//     return (
+//     <div className="my_image_click">
+//         <ImageGallery items={images} />
+//     </div>
+//     );
+// }
 
 export const Piano = () =>  {
     return( 
@@ -98,6 +109,7 @@ export const Email = () => {
     const [user_id, service_id, template_id] = [process.env.REACT_APP_EMAIL_USER, process.env.REACT_APP_EMAIL_SERVICE, process.env.REACT_APP_EMAIL_TEMPLATE]
     const handleEmail = (e) => {
         e.preventDefault();
+        console.log(user_id, service_id, template_id)
         emailjs.sendForm(service_id, template_id, e.target, user_id).then(
             (result) => {
                 notify("Your message has been delivered");

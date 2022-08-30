@@ -9,6 +9,9 @@ export const UkeImg = require('./terminal/uke.jpg').default
 export const YoutubeImg = require('./terminal/youtube.png').default
 export const GithubImg = require('./terminal/github.png').default
 export const MeImg = require('./terminal/me.jpeg').default
+export const TacoImg = require('./terminal/taco.png').default
+export const DiscImg = require('./terminal/disc.png').default
+export const ToledoImg = require('./terminal/toledo.png').default
 
 // art //
 export const WaterImg = require("./terminal/water.jpg").default

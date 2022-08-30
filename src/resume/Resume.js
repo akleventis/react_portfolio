@@ -1,6 +1,6 @@
 import React from "react";
 import "./resume.css";
-import {SiteImg, BitlyImg, PyImg, GoImg, WakeImg, JavaImg, JsImg, SqlImg, ReactImg} from "../assets/index.js"
+import {SiteImg, BitlyImg, PyImg, GoImg, WakeImg, JsImg, SqlImg, ReactImg} from "../assets/index.js"
 import resume from "../docs/resume.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
