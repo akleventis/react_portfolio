@@ -107,12 +107,10 @@ class Resume extends React.Component {
 
 
           <ul>
-            <li><span>Implemented REST services with microservices architecture  (Golang)</span></li>
-            <li><span>Practiced Agile software development</span></li>
-            <li><span>Involved in migration of Python-based services to Go </span></li>
-            <li><span>Created Go automated unit tests</span></li>
-            <li><span>Used Github and Jenkins for continuous integration and deployment</span></li>
-            <li><span>Exercise daily code reviews</span></li>
+            <li><span>Implement REST services with microservices architecture  (Golang)</span></li>
+            <li><span>Involved in migration of Python-based services to Go</span></li>
+            <li><span>Construct Go automated unit and integration tests</span></li>
+            <li><span>Git, Jira, and Slack for version control, tickets, and communication respectively</span></li>
             <a href="https://golang.org/" data-aos={"flip-down"} data-aos-duration="1200" style={{top: '10%'}} target="_blank" rel="noreferrer" className="code">
               Go
             </a>

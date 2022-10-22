@@ -21,7 +21,7 @@ const p_data = [
     img: AutoTab,
     p_url: "https://bit.ly/auto-tab-groups",
     git_url: "https://github.com/furofo/TabGroupExtension",
-    text: "Chrome Auto Tab Group Extension. Significantly updated functionality of application which resulted in an increased user count from 15 to around 150 while maintaining a 4.5 star rating. Revamped overall styling, added ability to add multiple groups, zoom, 'go back' functionality, ungroup if no matching text in url, and an overall clean-up/refactor throughout the codebase.",
+    text: "Chrome Auto Tab Group Extension. Significantly updated functionality of application which resulted in an increased user count from 15 to over 250 while maintaining a 4.5 star rating. Revamped overall styling, added ability to add multiple groups, zoom, 'go back' functionality, ungroup if no matching text in url, and an overall clean-up/refactor throughout the codebase.",
     langs: [{ Name: "JavaScript", URL: "https://www.javascript.com/" }, { Name: "HTML/CSS", URL: "https://www.w3.org/standards/webdesign/htmlcss" }],
   },
 ];
