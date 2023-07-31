@@ -6,7 +6,6 @@ import {
   PyImg,
   GoImg,
   WakeImg,
-  JsImg,
   SqlImg,
   ReactImg,
   UsafImg,
@@ -268,7 +267,7 @@ class Resume extends React.Component {
           </ul>
 
           <div style={{marginTop: '25px'}}>
-            <a href="https://bitly.com/" rel="noreferrer" target="_blank">
+            <a href="https://www.af.mil/" rel="noreferrer" target="_blank">
               <img className="logo" src={UsafImg} height="40px" width="40px" alt="bitly" />
             </a>
             <p className="h-span">
@@ -276,14 +275,14 @@ class Resume extends React.Component {
               <span>March 2016 - March 2020</span>
             </p>
             <p className="h-span">
-              <i>Aircraft Armament Systems </i>
+              <i><a href="https://foreverwingman.com/career_fields/2w1x1-aircraft-armament-systems/" rel="noreferrer" target="_blank">Aircraft Armament Systems </a></i>
               <span>Goldsboro, NC</span>
             </p>
           </div>
           <ul>
             <li>
               <span>
-                Managed aircraft munition systems maintenance, ensuring safety standards compliance.
+                Managed and maintained aircraft bomb, rocket, and missile release systems, guns, and munitions handling equipment on the F-15 fighter jet.
               </span>
             </li>
           </ul>

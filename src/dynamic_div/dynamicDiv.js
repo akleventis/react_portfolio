@@ -4,7 +4,7 @@ import AOS from 'aos';
 // import ImageGallery from "react-image-gallery";
 import emailjs from "@emailjs/browser";
 import "react-image-gallery/styles/css/image-gallery.css";
-import {ToledoImg, CodeImg, UkeImg, YoutubeImg, GithubImg, MeImg, DiscImg, TacoImg, SnowMov, PianoMov} from "../assets/index.js"
+import {ToledoImg, CodeImg, UkeImg, YoutubeImg, GithubImg, MeImg, MeAudrey, DiscImg, TacoImg, SnowMov, PianoMov} from "../assets/index.js"
 import { useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
@@ -95,7 +95,7 @@ export const Ukulele = () => {
 }
 
 export const MyImage = () =>{
-    return <img src={MeImg} id="my_image" className="my_image_click" alt="profilePicture" />
+    return <img src={MeAudrey} id="my_image" className="my_image_click" alt="profilePicture" />
 }
 
 export const Raleigh = () => {

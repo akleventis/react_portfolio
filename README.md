@@ -11,5 +11,3 @@ Repo for my personal site. Hosted through AWS using Cloudfront for https
 3. Mobile viewing
 4. [AOS](https://michalsnik.github.io/aos/) imported library for scrolling animation
 5. [TypewriterJS v2](https://www.npmjs.com/package/typewriter-effect)
-
-

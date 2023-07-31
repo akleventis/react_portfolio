@@ -12,6 +12,7 @@ export const MeImg = require('./terminal/me.jpeg').default
 export const TacoImg = require('./terminal/taco.png').default
 export const DiscImg = require('./terminal/disc.png').default
 export const ToledoImg = require('./terminal/toledo.png').default
+export const MeAudrey = require('./terminal/me_and_audrey.png').default
 
 // art //
 export const WaterImg = require("./terminal/water.jpg").default
