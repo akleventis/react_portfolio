@@ -31,14 +31,18 @@ export const SiteImg = require('./projects/site.png').default
 export const Site2Img = require('./projects/site2.png').default
 export const GitImg = require('./projects/git.png').default
 export const UhpImg = require('./projects/uhp.png').default
+export const NaotImg = require('./projects/naot_logo.png').default
+export const NfcImg = require('./projects/nfc.png').default
 
 // Resume //
 export const BitlyImg = require('./resume/bitly.png').default
 export const GoImg = require('./resume/gologo.png').default
 export const JavaImg = require('./resume/javalogo.png').default
 export const JsImg = require('./resume/jslogo.png').default
+export const NextImg = require('./resume/nextjs.png').default
 export const PyImg = require('./resume/pylogo.png').default
 export const ReactImg = require('./resume/reactlogo.png').default
 export const SqlImg = require('./resume/sql.png').default
 export const WakeImg = require('./resume/wake.png').default
 export const Wake2Img = require('./resume/wake2.png').default
+export const UsafImg = require('./projects/usaf.png').default

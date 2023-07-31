@@ -1,9 +1,21 @@
-import React from "react";
-import "./resume.css";
-import {SiteImg, BitlyImg, PyImg, GoImg, WakeImg, JsImg, SqlImg, ReactImg} from "../assets/index.js"
-import resume from "../docs/resume.pdf";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from 'react';
+import './resume.css';
+import {
+  SiteImg,
+  BitlyImg,
+  PyImg,
+  GoImg,
+  WakeImg,
+  JsImg,
+  SqlImg,
+  ReactImg,
+  UsafImg,
+  NextImg
+} from '../assets/index.js';
+import resume from '../docs/resume.pdf';
+import transcript from '../docs/transcript.pdf';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class Resume extends React.Component {
   constructor(props) {
@@ -33,31 +45,70 @@ class Resume extends React.Component {
               name="site-link"
               className="site-link r-link"
               rel="noreferrer"
-            > </a>
+            >
+              {' '}
+            </a>
           </div>
 
           {/* --------------------SECTION------------------------ */}
 
-          <h5>Languages & Tools</h5>
+          <h5>Languages & Frameworks</h5>
           <div className="lang-container">
             <a href="https://golang.org/" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="400" src={GoImg} height="50px" width="50px" alt="golang logo" />
-            </a>
-            <a href="https://www.python.org/" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="1300" src={PyImg} height="50px" width="50px" alt="python logo" />
-            </a>
-            <a href="https://www.javascript.com/" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="700" src={JsImg} height="50px" width="50px" alt="JavaScript logo" />
+              <img
+                data-aos={'zoom-in'}
+                data-aos-duration="400"
+                src={GoImg}
+                height="50px"
+                width="50px"
+                alt="golang logo"
+              />
             </a>
             <a href="https://reactjs.org/" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="1000" src={ReactImg} height="50px" width="50px" alt="React logo" />
+              <img
+                data-aos={'zoom-in'}
+                data-aos-duration="1000"
+                src={ReactImg}
+                height="50px"
+                width="50px"
+                alt="React logo"
+              />
             </a>
-            <a href="https://en.wikipedia.org/wiki/SQL" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="1900" src={SqlImg} height="50px" width="50px" alt="sql logo" />
+            <a href="https://nextjs.org/" rel="noreferrer" target="_blank" alt="source">
+              <img
+                data-aos={'zoom-in'}
+                data-aos-duration="700"
+                src={NextImg}
+                height="50px"
+                width="50px"
+                alt="JavaScript logo"
+              />
             </a>
-            {/* <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html" rel="noreferrer" target="_blank" alt="source">
-              <img data-aos={"zoom-in"} data-aos-duration="1600" src={JavaImg} height="50px" width="50px" alt="java logo" />
-            </a> */}
+            <a href="https://www.python.org/" rel="noreferrer" target="_blank" alt="source">
+              <img
+                data-aos={'zoom-in'}
+                data-aos-duration="1300"
+                src={PyImg}
+                height="50px"
+                width="50px"
+                alt="python logo"
+              />
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/SQL"
+              rel="noreferrer"
+              target="_blank"
+              alt="source"
+            >
+              <img
+                data-aos={'zoom-in'}
+                data-aos-duration="1900"
+                src={SqlImg}
+                height="50px"
+                width="50px"
+                alt="sql logo"
+              />
+            </a>
           </div>
 
           <h5>General</h5>
@@ -65,18 +116,25 @@ class Resume extends React.Component {
             <p className="lp gen">Team player</p>
             <p className="lp gen">Analytical</p>
             <p className="lp gen">Research-oriented</p>
-            <p className="lp gen">Quality Assurance</p>
           </section>
 
           <h5>Technical</h5>
           <section className="lang-container">
             <a href="https://git-scm.com/" rel="noreferrer" target="_blank">
               <p className="lp">Git Workflows</p>
-              </a>
-            <a href="https://en.wikipedia.org/wiki/Agile_software_development" rel="noreferrer" target="_blank">
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/Agile_software_development"
+              rel="noreferrer"
+              target="_blank"
+            >
               <p className="lp">Agile Software Development</p>
-              </a>
-            <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" rel="noreferrer" target="_blank">
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/Representational_state_transfer"
+              rel="noreferrer"
+              target="_blank"
+            >
               <p className="lp">RESTful Architecture</p>
             </a>
           </section>
@@ -92,12 +150,79 @@ class Resume extends React.Component {
 
           <h5>Experience</h5>
           <div>
-          <a href="https://bitly.com/" rel="noreferrer" target="_blank">
-          <img className="logo" src={BitlyImg} height="40px" width="40px" alt="bitly" />
-           </a>
+            <a href="https://bitly.com/" rel="noreferrer" target="_blank">
+              <img className="logo" src={BitlyImg} height="40px" width="40px" alt="bitly" />
+            </a>
             <p className="h-span">
               <b>Bitly</b>
-              <span>June 2021 - Present</span>
+              <span>November 2022 - Present</span>
+            </p>
+            <p className="h-span">
+              <i>Software Engineer II</i>
+              <span>Remote</span>
+            </p>
+          </div>
+
+          <ul>
+            <li>
+              <span>Implement REST services in a microservices architecture.</span>
+            </li>
+            <li>
+              <span>Create automated unit and integration tests.</span>
+            </li>
+            <li>
+              <span>Assist in the migration of Python-based services to Golang.</span>
+            </li>
+            <li>
+              <span>Configure Next.js back-end server handling for tech stack transition.</span>
+            </li>
+            <li>
+              <span>
+                Git, Jira, and Slack for version control, issue tracking, and communication.
+              </span>
+            </li>
+            <a
+              href="https://golang.org/"
+              data-aos={'flip-down'}
+              data-aos-duration="1200"
+              style={{ top: '0%' }}
+              target="_blank"
+              rel="noreferrer"
+              className="code"
+            >
+              Go
+            </a>
+            <a
+              href="https://www.python.org/"
+              data-aos={'flip-down'}
+              style={{ top: '30%' }}
+              data-aos-duration="1200"
+              target="_blank"
+              rel="noreferrer"
+              className="code"
+            >
+              Python
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/SQL"
+              data-aos={'flip-down'}
+              style={{ top: '60%' }}
+              data-aos-duration="1200"
+              target="_blank"
+              rel="noreferrer"
+              className="code"
+            >
+              SQL
+            </a>
+          </ul>
+
+          <div style={{marginTop: '25px'}}>
+            <a href="https://bitly.com/" rel="noreferrer" target="_blank">
+              <img className="logo" src={BitlyImg} height="40px" width="40px" alt="bitly" />
+            </a>
+            <p className="h-span">
+              <b>Bitly</b>
+              <span>June 2021 - November 2022</span>
             </p>
             <p className="h-span">
               <i>Back-End Engineering Intern</i>
@@ -105,61 +230,102 @@ class Resume extends React.Component {
             </p>
           </div>
 
-
           <ul>
-            <li><span>Implement REST services with microservices architecture  (Golang)</span></li>
-            <li><span>Involved in migration of Python-based services to Go</span></li>
-            <li><span>Construct Go automated unit and integration tests</span></li>
-            <li><span>Git, Jira, and Slack for version control, tickets, and communication respectively</span></li>
-            <a href="https://golang.org/" data-aos={"flip-down"} data-aos-duration="1200" style={{top: '10%'}} target="_blank" rel="noreferrer" className="code">
+            <li>
+              <span>
+                Developed a strong understanding of client/server communication, RESTful APIs, and
+                the principles of microservice architecture.
+              </span>
+            </li>
+            <li>
+              <span>
+                Contributed to the successful alpha release of Bitly’s{' '}
+                <a href="https://bitly.com/pages/products/link-in-bio">link-in-bio product.</a>
+              </span>
+            </li>
+            <a
+              href="https://golang.org/"
+              data-aos={'flip-down'}
+              data-aos-duration="1200"
+              style={{ top: '0%' }}
+              target="_blank"
+              rel="noreferrer"
+              className="code"
+            >
               Go
             </a>
-            <a href="https://www.python.org/" data-aos={"flip-down"} style={{top: '43%'}} data-aos-duration="1200" target="_blank" rel="noreferrer" className="code">
+            <a
+              href="https://www.python.org/"
+              data-aos={'flip-down'}
+              style={{ top: '60%' }}
+              data-aos-duration="1200"
+              target="_blank"
+              rel="noreferrer"
+              className="code"
+            >
               Python
-            </a>
-            <a href="https://en.wikipedia.org/wiki/SQL" data-aos={"flip-down"} style={{top: '76%'}} data-aos-duration="1200" target="_blank" rel="noreferrer" className="code">
-              SQL
             </a>
           </ul>
 
+          <div style={{marginTop: '25px'}}>
+            <a href="https://bitly.com/" rel="noreferrer" target="_blank">
+              <img className="logo" src={UsafImg} height="40px" width="40px" alt="bitly" />
+            </a>
+            <p className="h-span">
+              <b>United States Air Force</b>
+              <span>March 2016 - March 2020</span>
+            </p>
+            <p className="h-span">
+              <i>Aircraft Armament Systems </i>
+              <span>Goldsboro, NC</span>
+            </p>
+          </div>
+          <ul>
+            <li>
+              <span>
+                Managed aircraft munition systems maintenance, ensuring safety standards compliance.
+              </span>
+            </li>
+          </ul>
           {/* --------------------SECTION------------------------ */}
 
           <h5>Education</h5>
           <div>
-          <a href="https://www.waketech.edu/" rel="noreferrer" target="_blank">
-          <img className="logo" id="wake" src={WakeImg} height="40px" width="40px" alt="waketech" />
+            <a href="https://www.waketech.edu/" rel="noreferrer" target="_blank">
+              <img
+                className="logo"
+                id="wake"
+                src={WakeImg}
+                height="40px"
+                width="40px"
+                alt="waketech"
+              />
             </a>
             <p className="h-span">
-              <b>Wake Tech Community </b>
+              <b>Wake Technical Community </b>
               <span>2020 - 2022</span>
               <b>College</b>
             </p>
             <p className="h-span">
-            <i>AAS in Computer Programming </i>
-            <span>Raleigh, Nc</span>
-            <i>and Development</i>
+              <i>
+                <a href="https://www.waketech.edu/programs-courses/credit/computer-programming/degrees-programs/a25590cp">
+                  AAS in Computer Programming and Development{' '}
+                </a>
+              </i>
+              <span>Raleigh, Nc</span>
             </p>
           </div>
-
-
           <ul>
-            <li><span>Advanced Python & Java Programming</span></li>
-            <li><span>Computing Fundamentals I & II</span></li>
-            <li><span>Database Programming</span></li>
-            <li><span>Web Markup and Scripting (JavaScript)</span></li>
-            <li><span>Cloud Application Development</span></li>
-            <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html" data-aos={"flip-down"} data-aos-duration="1200" style={{top: '0%'}} target="_blank" rel="noreferrer" className="code">
-              Java
-            </a>
-            <a href="https://www.python.org/" data-aos={"flip-down"} data-aos-duration="1200" style={{top: '28%'}} rel="noreferrer" target="_blank" className="code">
-              Python
-            </a>
-            <a href="https://en.wikipedia.org/wiki/SQL" data-aos={"flip-down"} data-aos-duration="1200" style={{top: '56%'}} rel="noreferrer" target="_blank" className="code">
-              SQL
-            </a>
-            <a href="https://www.javascript.com/" data-aos={"flip-down"} data-aos-duration="1200" style={{top: '84%'}} rel="noreferrer" target="_blank" className="code">
-              JavaScript
-            </a> 
+            <li>
+              <span>
+              Associate's Degree with hands-on training in designing and developing desktop and web applications for various industries.
+              </span>
+            </li>
+            <li>
+              <span>
+              <a target="_blank" rel="noreferrer" href={transcript}>Click to view transcript</a>
+              </span>
+            </li>
           </ul>
         </div>
       </div>

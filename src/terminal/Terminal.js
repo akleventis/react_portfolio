@@ -43,7 +43,7 @@ class Terminal extends React.Component {
       let lst2 = [
         ["a", " hey i'm alex"],
         ["b", '<a id="r" target="_blank">resume.pdf</a>'],
-        ["c", '<a id="raleigh">Raleigh, Nc</a>'],
+        ["c", '<a id="raleigh">Denver, Co</a>'],
         ["d", ' [<a id="travel">"Travel"</a>, <a id="snow">"Snow"</a>, <a id="disc">"Disc Golf"</a>, <a id="comp">"Code"</a>, <a id="taco">"Taco"</a>, <a id="piano">"Piano"</a>, <a id="uke">"Ukulele"</a>]'],
         ["e", "<a href='https://www.waketech.edu/programs-courses/credit/computer-programming' target='_blank'>Associates of Applied Science in Computer Programming and Development</a>"],
         [

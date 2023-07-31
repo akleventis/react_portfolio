@@ -1,27 +1,41 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
 import React from "react";
-import { AutoTab, GitImg, UhpImg } from "../assets/index.js";
+import { AutoTab, GitImg, UhpImg, NaotImg, NfcImg } from "../assets/index.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./projects.css";
 
 const p_data = [
   {
+    img: NaotImg,
+    p_url: "https://mynaot.com",
+    git_url: "https://github.com/akleventis/naot_tc",
+    text: "Contract job for The National Association of Orthopaedic Technologists (NAOT). Utilized Next.js and MaterialUI to build out website with automated Netlify deployment. Integrated Stripe API for secure payments and implemented data fetching scripts for easy registration tracking. Currently maintaining and updating the website for optimal performance.",
+    langs: [{ Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "MaterialUI", URL: "https://mui.com/" }],
+  },
+  {
     img: UhpImg,
     p_url: "https://unitedhouseproductions.com",
     git_url: "https://github.com/akleventis/united_house_server",
-    text: "United House Productions LLC Go RESTful API backend server for live front-end application (hyperlink above). Stripe checkout integration for secure client-side purchasing. Postgresql database for storing products, events, and dj information. Features IP address rate limiting, auth token requests for admin actions, and unit tests (wip)",
+    text: "Contract job for United House Productions LLC. Client written in React hosted through Amazon S3. Go RESTful API backend server for live app (hyperlink above). Stripe checkout integration for secure client-side purchasing. Postgresql database for storing products, events, and dj information.",
     langs: [
       { Name: "Go", URL: "https://go.dev/" },
       { Name: "Postgresql", URL: "https://www.postgresql.org/" },
     ],
   },
   {
+    img: NfcImg,
+    p_url: "https://github.com/akleventis/nfc_v1",
+    git_url: "https://github.com/akleventis/nfc_v1",
+    text: "Side project for friends – an NFC \"virtual letters\" program enabling dynamic data loading onto a URL without a server. Utilized Contentful CMS and Next.js for easy content management and routing. Employed NFC tags for an interactive history experience. Successfully deployed the app on Netlify for practical use.",
+    langs: [{ Name: "JavaScript", URL: "https://www.javascript.com/" }, { Name: "Sass", URL: "https://sass-lang.com/" }],
+  },
+  {
     img: AutoTab,
     p_url: "https://bit.ly/auto-tab-groups",
     git_url: "https://github.com/furofo/TabGroupExtension",
-    text: "Chrome Auto Tab Group Extension. Significantly updated functionality of application which resulted in an increased user count from 15 to over 250 while maintaining a 4.5 star rating. Revamped overall styling, added ability to add multiple groups, zoom, 'go back' functionality, ungroup if no matching text in url, and an overall clean-up/refactor throughout the codebase.",
+    text: "Updated Chrome Auto Tab Group Extension with enhanced features, resulting in 450+ users and a 4.5-star rating. Improved styling, added multi-group support, zoom, ungrouping on no matching URL text, and an overall codebase clean-up.",
     langs: [{ Name: "JavaScript", URL: "https://www.javascript.com/" }, { Name: "HTML/CSS", URL: "https://www.w3.org/standards/webdesign/htmlcss" }],
   },
 ];
