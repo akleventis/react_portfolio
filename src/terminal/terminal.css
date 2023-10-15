@@ -62,15 +62,29 @@
     border-radius: 50%;
     width: 15px;
     text-align: center;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
   }
   
   .t-head-container div:nth-child(1) {
     background-color: #ff0000;
   }
+  .t-head-container div:nth-child(1):hover {
+    background-color: #a10303;
+  }
   .t-head-container div:nth-child(2) {
     background-color: #ffd000;
   }
+  .t-head-container div:nth-child(2):hover {
+    background-color: #bb9904;
+  }
   .t-head-container div:nth-child(3) {
     background-color: #07c700;
+  }
+  .t-head-container div:nth-child(3):hover {
+    background-color: #078e02;
   }
   
