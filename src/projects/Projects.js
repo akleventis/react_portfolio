@@ -18,10 +18,10 @@ const p_data = [
     img: UhpImg,
     p_url: "https://unitedhouseproductions.com",
     git_url: "https://github.com/akleventis/united_house_server",
-    text: "Contract job for United House Productions LLC. Client written in React hosted through Amazon S3. Go RESTful API live backend server deployed through DigitalOcean. Stripe checkout integration for secure purchasing. Postgresql database for storing products, events, and dj information.",
+    text: "Contract job for United House Productions LLC. Client written in React hosted through Amazon S3. Go RESTful API live backend server deployed through DigitalOcean. Stripe checkout integration for secure purchasing. PostgreSQL database for storing products, events, and dj information.",
     langs: [
       { Name: "Go", URL: "https://go.dev/" },
-      { Name: "Postgresql", URL: "https://www.postgresql.org/" },
+      { Name: "PostgreSQL", URL: "https://www.postgresql.org/" },
     ],
   },
   {
@@ -29,13 +29,13 @@ const p_data = [
     p_url: "https://github.com/akleventis/nfc_v1",
     git_url: "https://github.com/akleventis/nfc_v1",
     text: "Virtual letters in the form of a Near Field Communtion (NFC) tag. Scanning these tags redirects the user to a new page through cookie manipulation. The combination of Contentful CMS and Next.js enables me to update the tag with new information without the need for hardcoding, thus creating new routes and pages with simplicity.",
-    langs: [{ Name: "JavaScript", URL: "https://www.javascript.com/" }, { Name: "Sass", URL: "https://sass-lang.com/" }],
+    langs: [{ Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "Sass", URL: "https://sass-lang.com/" }],
   },
   {
     img: AutoTab,
     p_url: "https://bit.ly/auto-tab-groups",
     git_url: "https://github.com/furofo/TabGroupExtension",
-    text: "Updated Chrome Auto Tab Group Extension with enhanced features, increasing user count from ~100 to 450+ while maintaining a 4.5-star rating. Improved styling, added multi-group support, zoom, ungrouping on no matching URL text, and an overall codebase clean-up.",
+    text: "Updated Chrome Auto Tab Group Extension with enhanced features, increasing user count from ~100 to 500+ while maintaining a 4.5-star rating. Improved styling, added multi-group support, zoom, ungrouping on no matching URL text, and an overall codebase clean-up.",
     langs: [{ Name: "JavaScript", URL: "https://www.javascript.com/" }, { Name: "HTML/CSS", URL: "https://www.w3.org/standards/webdesign/htmlcss" }],
   },
 ];

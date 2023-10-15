@@ -157,8 +157,8 @@ class Resume extends React.Component {
               <span>November 2022 - Present</span>
             </p>
             <p className="h-span">
-              <i>Software Engineer II</i>
-              <span>Remote</span>
+              <i>Intern - Backend Software Engineer II</i>
+              <span>Denver, Co</span>
             </p>
           </div>
 
@@ -203,7 +203,7 @@ class Resume extends React.Component {
               Python
             </a>
             <a
-              href="https://en.wikipedia.org/wiki/SQL"
+              href="https://nextjs.org/"
               data-aos={'flip-down'}
               style={{ top: '60%' }}
               data-aos-duration="1200"
@@ -211,58 +211,7 @@ class Resume extends React.Component {
               rel="noreferrer"
               className="code"
             >
-              SQL
-            </a>
-          </ul>
-
-          <div style={{marginTop: '25px'}}>
-            <a href="https://bitly.com/" rel="noreferrer" target="_blank">
-              <img className="logo" src={BitlyImg} height="40px" width="40px" alt="bitly" />
-            </a>
-            <p className="h-span">
-              <b>Bitly</b>
-              <span>June 2021 - November 2022</span>
-            </p>
-            <p className="h-span">
-              <i>Back-End Engineering Intern</i>
-              <span>Remote</span>
-            </p>
-          </div>
-
-          <ul>
-            <li>
-              <span>
-                Developed a strong understanding of client/server communication, RESTful APIs, and
-                the principles of microservice architecture.
-              </span>
-            </li>
-            <li>
-              <span>
-                Contributed to the successful alpha release of Bitly’s{' '}
-                <a href="https://bitly.com/pages/products/link-in-bio">link-in-bio product.</a>
-              </span>
-            </li>
-            <a
-              href="https://golang.org/"
-              data-aos={'flip-down'}
-              data-aos-duration="1200"
-              style={{ top: '0%' }}
-              target="_blank"
-              rel="noreferrer"
-              className="code"
-            >
-              Go
-            </a>
-            <a
-              href="https://www.python.org/"
-              data-aos={'flip-down'}
-              style={{ top: '60%' }}
-              data-aos-duration="1200"
-              target="_blank"
-              rel="noreferrer"
-              className="code"
-            >
-              Python
+              Next.js
             </a>
           </ul>
 
@@ -276,7 +225,7 @@ class Resume extends React.Component {
             </p>
             <p className="h-span">
               <i><a href="https://foreverwingman.com/career_fields/2w1x1-aircraft-armament-systems/" rel="noreferrer" target="_blank">Aircraft Armament Systems </a></i>
-              <span>Goldsboro, NC</span>
+              <span>Goldsboro, Nc</span>
             </p>
           </div>
           <ul>
@@ -317,12 +266,25 @@ class Resume extends React.Component {
           <ul>
             <li>
               <span>
-              Associate's Degree with hands-on training in designing and developing desktop and web applications for various industries.
+              Proficiently acquired knowledge in Java, HTML/CSS, SQL, RESTful services, and unit testing.
               </span>
             </li>
             <li>
               <span>
-              <a target="_blank" rel="noreferrer" href={transcript}>Click to view transcript</a>
+              Developed hands-on versatility in all-around software development, with a focus on web applications.
+              </span>
+            </li>
+            <li>
+              <span>
+              <a target="_blank" rel="noreferrer" href={transcript}>
+                View transcript {" "}
+              <img
+                src={SiteImg}
+                height="15px"
+                width="15px"
+                alt="transcript hyperlink"
+                ></img>
+                </a>
               </span>
             </li>
           </ul>

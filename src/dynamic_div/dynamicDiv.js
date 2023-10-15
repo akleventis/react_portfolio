@@ -1,27 +1,29 @@
 import "./dynamicDiv.css";
 import "aos/dist/aos.css";
 import AOS from 'aos';
-// import ImageGallery from "react-image-gallery";
 import emailjs from "@emailjs/browser";
 import "react-image-gallery/styles/css/image-gallery.css";
-import {ToledoImg, CodeImg, UkeImg, YoutubeImg, GithubImg, MeImg, MeAudrey, DiscImg, TacoImg, SnowMov, PianoMov} from "../assets/index.js"
+import {ToledoImg, CodeImg, UkeImg, YoutubeImg, GithubImg, MeAudrey, DiscMov, TacoImg, SnowMov, PianoMov} from "../assets/index.js"
 import { useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-// export const Skating = () => {
-//      return   <img className="my_image_click" src={SkateImg} alt="skate"/>
-// }
+
 export const Travel = () => {
-     return   <img className="my_image_click" src={ToledoImg} alt="skate"/>
+     return   <img className="my_image_click" src={ToledoImg} alt="travel"/>
 }
 
 export const Taco = () => {
-     return   <img className="my_image_click" src={TacoImg} alt="skate"/>
+     return   <img className="my_image_click" src={TacoImg} alt="taco kitty"/>
 }
 
 export const Disc = () => {
-     return   <img className="my_image_click" src={DiscImg} alt="skate"/>
+    return( 
+        <video width="320" className="my_image_click" height="240" controls autoPlay>
+        <source src={DiscMov} type="video/mp4" />
+        Your browser does not support the video tag.
+        </video>
+      )
 }
 
 export const Winter = () => {
@@ -33,14 +35,6 @@ export const Winter = () => {
       )
 }
 
-// export const Biking = () => {
-//     return( 
-//         <video width="320" className="my_image_click" height="240" controls loop autoPlay muted>
-//         <source src={BikeMov} type="video/mp4" />
-//         Your browser does not support the video tag.
-//         </video>
-//       )
-// }
 
 export const Code = () => {
     useEffect(() => {
@@ -58,15 +52,6 @@ export const Code = () => {
         </div>
       );
 }
-
-// export const Art = () => {
-//     const images = [ { original: WaterImg, thumbnail: WaterImg, }, { original: SmileImg, thumbnail: SmileImg, }, { original: EyeImg, thumbnail: EyeImg, }, { original: FlowImg, thumbnail: FlowImg, }, ];
-//     return (
-//     <div className="my_image_click">
-//         <ImageGallery items={images} />
-//     </div>
-//     );
-// }
 
 export const Piano = () =>  {
     return( 

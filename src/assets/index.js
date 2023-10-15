@@ -10,7 +10,6 @@ export const YoutubeImg = require('./terminal/youtube.png').default
 export const GithubImg = require('./terminal/github.png').default
 export const MeImg = require('./terminal/me.jpeg').default
 export const TacoImg = require('./terminal/taco.png').default
-export const DiscImg = require('./terminal/disc.png').default
 export const ToledoImg = require('./terminal/toledo.png').default
 export const MeAudrey = require('./terminal/me_and_audrey.png').default
 
@@ -24,9 +23,9 @@ export const FlowImg = require("./terminal/flow.jpg").default
 export const BikeMov = require('./terminal/bike.mov').default
 export const PianoMov = require('./terminal/piano.mp4').default
 export const SnowMov = require('./terminal/snow.mp4').default
+export const DiscMov = require('./terminal/disc.mp4').default
 
 // Projects //
-// export const DogImg = require('./projects/dog.png').default
 export const AutoTab = require('./projects/autotab.png').default
 export const SiteImg = require('./projects/site.png').default
 export const Site2Img = require('./projects/site2.png').default
