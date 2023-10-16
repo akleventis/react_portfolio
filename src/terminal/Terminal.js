@@ -5,6 +5,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import resume from '../docs/resume.pdf'
 import {Disc, Winter, Taco, Code, Travel, Piano, Ukulele, MyImage, Raleigh, Email} from '../dynamic_div/dynamicDiv.js'
+import {Bacon, Lumpy, Bmo} from '../assets/index.js'
 
 
 class Terminal extends React.Component {
@@ -108,15 +109,20 @@ class Terminal extends React.Component {
     this.setState({divSection: [<MyImage key={1}/>]})
   }
 
+  glob = (sound) => {
+    const audio = new Audio(sound);
+    audio.play()
+  }
+
   render() {
     return (
       <div id="about" className="about-container">
         <div className="terminal-container" id="t-c">
             <div data-aos="fade-right" data-aos-duration="3000" className="terminal">
             <div className="t-head-container">
-              <div></div>
-              <div></div>
-              <div></div>
+              <div onClick={() => this.glob(Bmo)}></div>
+              <div onClick={() => this.glob(Lumpy)}></div>
+              <div onClick={() => this.glob(Bacon)}></div>
             </div>
             <p id="1"></p>
             <i id="a"></i>

@@ -231,7 +231,7 @@ class Resume extends React.Component {
           <ul>
             <li>
               <span>
-                Managed and maintained aircraft bomb, rocket, and missile release systems, guns, and munitions handling equipment on the F-15 fighter jet.
+              Managed and serviced weapon systems and munitions equipment for the F-15 fighter jet.
               </span>
             </li>
           </ul>
@@ -271,7 +271,7 @@ class Resume extends React.Component {
             </li>
             <li>
               <span>
-              Developed hands-on versatility in all-around software development, with a focus on web applications.
+              Developed hands-on versatility in all-around software development.
               </span>
             </li>
             <li>
