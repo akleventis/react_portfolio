@@ -16,6 +16,17 @@ import transcript from '../docs/transcript.pdf';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+let resumeBullets = [
+  'Led team to significantly enhance site security and functionality by upgrading Bitly\'s anonymous shortener system',
+  'Spearheaded the transition of our sign-up/in flow from Go templates to a static Next.js build, significantly improving user experience and maintainability.',
+  'Initiated the BQSync project to replace BQFlow, facilitating seamless integration of new data streams into Big Query with Go.',
+  'Architect and implement RESTful services in Go within a microservices ecosystem, focusing on scalability and security.',
+  'Assisted the migration of services from Python to Go, optimizing performance and maintainability of our tech stack.',
+  'Developed an admin tool during hack week to streamline metric population in development environments, boosting developer/QA efficiency with Go.',
+  'Design and execute automated unit and integration testing frameworks in Go to ensure code reliability and quality.',
+  'Utilize Git, Jira, and Slack for version control, issue tracking, and communication.',
+]
+
 class Resume extends React.Component {
   constructor(props) {
     super(props);
@@ -157,29 +168,17 @@ class Resume extends React.Component {
               <span>November 2022 - Present</span>
             </p>
             <p className="h-span">
-              <i>Intern - Backend Software Engineer II</i>
+              <i>Intern - Backend Software Engineer III</i>
               <span>Denver, Co</span>
             </p>
           </div>
 
           <ul>
-            <li>
-              <span>Implement REST services in a microservices architecture.</span>
-            </li>
-            <li>
-              <span>Create automated unit and integration tests.</span>
-            </li>
-            <li>
-              <span>Assist in the migration of Python-based services to Golang.</span>
-            </li>
-            <li>
-              <span>Configure Next.js back-end server handling for tech stack transition.</span>
-            </li>
-            <li>
-              <span>
-                Git, Jira, and Slack for version control, issue tracking, and communication.
-              </span>
-            </li>
+            {resumeBullets.map((bullet, index) => (
+                <li>
+                  <span key={index}>{bullet}</span>
+                </li>
+            ))}
             <a
               href="https://golang.org/"
               data-aos={'flip-down'}
@@ -194,7 +193,7 @@ class Resume extends React.Component {
             <a
               href="https://www.python.org/"
               data-aos={'flip-down'}
-              style={{ top: '30%' }}
+              style={{ top: '15%' }}
               data-aos-duration="1200"
               target="_blank"
               rel="noreferrer"
@@ -205,13 +204,46 @@ class Resume extends React.Component {
             <a
               href="https://nextjs.org/"
               data-aos={'flip-down'}
-              style={{ top: '60%' }}
+              style={{ top: '30%' }}
               data-aos-duration="1200"
               target="_blank"
               rel="noreferrer"
               className="code"
             >
               Next.js
+            </a>
+            <a
+              href="https://cloud.google.com"
+              data-aos={'flip-down'}
+              style={{ top: '45%' }}
+              data-aos-duration="1200"
+              target="_blank"
+              rel="noreferrer"
+              className="code"
+            >
+              MariaDB
+            </a>
+            <a
+              href="https://mariadb.org/"
+              data-aos={'flip-down'}
+              style={{ top: '60%' }}
+              data-aos-duration="1200"
+              target="_blank"
+              rel="noreferrer"
+              className="code"
+            >
+              GCP
+            </a>
+            <a
+              href="https://github.com/"
+              data-aos={'flip-down'}
+              style={{ top: '75%' }}
+              data-aos-duration="1200"
+              target="_blank"
+              rel="noreferrer"
+              className="code"
+            >
+              GitHub
             </a>
           </ul>
 
