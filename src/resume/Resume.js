@@ -17,14 +17,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 let resumeBullets = [
-  'Led team to significantly enhance site security and functionality by upgrading Bitly\'s anonymous shortener system',
-  'Spearheaded the transition of our sign-up/in flow from Go templates to a static Next.js build, significantly improving user experience and maintainability.',
-  'Initiated the BQSync project to replace BQFlow, facilitating seamless integration of new data streams into Big Query with Go.',
-  'Architect and implement RESTful services in Go within a microservices ecosystem, focusing on scalability and security.',
-  'Assisted the migration of services from Python to Go, optimizing performance and maintainability of our tech stack.',
-  'Developed an admin tool during hack week to streamline metric population in development environments, boosting developer/QA efficiency with Go.',
-  'Design and execute automated unit and integration testing frameworks in Go to ensure code reliability and quality.',
-  'Utilize Git, Jira, and Slack for version control, issue tracking, and communication.',
+  'Architect and implement RESTful services in Go within a microservices ecosystem.',
+  'Assist in migrating services from Python to Go, enhancing performance and tech stack maintainability.',
+  'Led team in upgrading Bitly’s anonymous shortener system, significantly improving site security.',
+  'Integrated Optimizely’s Feature Experimentation service, enabling streamlined A/B testing across applications. (Go)',
+  'Integrated Gemini AI for domain generation, driving major product upgrades. (Go)',
+  'Developed admin tooling to automate metric population in dev environments, boosting developer and QA efficiency.',
+  'Active member of a rotating on-call shift for DDoS attack and server mitigation',
 ]
 
 class Resume extends React.Component {
