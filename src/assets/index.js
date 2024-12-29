@@ -5,12 +5,12 @@ export const MoonImg = require('./slider/moon.png').default
 // Terminal //
 export const SkateImg = require('./terminal/skate.jpg').default
 export const CodeImg = require('./terminal/computer.png').default
-export const UkeImg = require('./terminal/uke.jpg').default
+// export const UkeImg = require('./terminal/uke.jpg').default
 export const YoutubeImg = require('./terminal/youtube.png').default
 export const GithubImg = require('./terminal/github.png').default
 export const MeImg = require('./terminal/me.jpeg').default
 export const TacoImg = require('./terminal/taco.png').default
-export const ToledoImg = require('./terminal/toledo.png').default
+export const TravelImg = require('./terminal/travel.jpeg').default
 export const MeAudrey = require('./terminal/me_and_audrey.png').default
 export const Bacon = require('./terminal/bacon.mp3').default
 export const Lumpy = require('./terminal/lumpy.mp3').default 
@@ -36,6 +36,7 @@ export const GitImg = require('./projects/git.png').default
 export const UhpImg = require('./projects/uhp.png').default
 export const NaotImg = require('./projects/naot_logo.png').default
 export const NfcImg = require('./projects/nfc.png').default
+export const LanImg = require('./projects/lan_remote.png').default
 
 // Resume //
 export const BitlyImg = require('./resume/bitly.png').default

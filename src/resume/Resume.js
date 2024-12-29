@@ -212,7 +212,7 @@ class Resume extends React.Component {
               Next.js
             </a>
             <a
-              href="https://cloud.google.com"
+              href="https://mariadb.org/"
               data-aos={'flip-down'}
               style={{ top: '45%' }}
               data-aos-duration="1200"
@@ -223,7 +223,7 @@ class Resume extends React.Component {
               MariaDB
             </a>
             <a
-              href="https://mariadb.org/"
+              href="https://cloud.google.com"
               data-aos={'flip-down'}
               style={{ top: '60%' }}
               data-aos-duration="1200"

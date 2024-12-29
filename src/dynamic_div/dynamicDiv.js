@@ -3,14 +3,14 @@ import "aos/dist/aos.css";
 import AOS from 'aos';
 import emailjs from "@emailjs/browser";
 import "react-image-gallery/styles/css/image-gallery.css";
-import {ToledoImg, CodeImg, UkeImg, YoutubeImg, GithubImg, MeAudrey, DiscMov, TacoImg, SnowMov, PianoMov} from "../assets/index.js"
+import {TravelImg, CodeImg, GithubImg, MeAudrey, DiscMov, TacoImg, SnowMov, PianoMov} from "../assets/index.js"
 import { useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 
 export const Travel = () => {
-     return   <img className="my_image_click" src={ToledoImg} alt="travel"/>
+     return   <img className="my_image_click" src={TravelImg} alt="travel"/>
 }
 
 export const Taco = () => {
@@ -62,22 +62,22 @@ export const Piano = () =>  {
       )
 }
 
-export const Ukulele = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-        });
+// export const Ukulele = () => {
+//     useEffect(() => {
+//         AOS.init({
+//             duration: 800,
+//         });
     
-    })
-    return( 
-        <div className="code_container">
-            <a className="img-link" href="https://youtu.be/zcLkoWz_v38" width="200px"target="_blank" rel="noreferrer">
-                <img data-aos={"zoom-in"} className="inner_image" src={YoutubeImg} alt="youtube"/>
-            </a>
-            <img className="my_image_click" src={UkeImg} alt="uke" />
-        </div>
-  )
-}
+//     })
+//     return( 
+//         <div className="code_container">
+//             <a className="img-link" href="https://youtu.be/zcLkoWz_v38" width="200px"target="_blank" rel="noreferrer">
+//                 <img data-aos={"zoom-in"} className="inner_image" src={YoutubeImg} alt="youtube"/>
+//             </a>
+//             <img className="my_image_click" src={UkeImg} alt="uke" />
+//         </div>
+//   )
+// }
 
 export const MyImage = () =>{
     return <img src={MeAudrey} id="my_image" className="my_image_click" alt="profilePicture" />

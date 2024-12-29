@@ -1,29 +1,36 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
 import React from "react";
-import { AutoTab, GitImg, UhpImg, NaotImg, NfcImg } from "../assets/index.js";
+import { AutoTab, GitImg, LanImg, NaotImg, NfcImg } from "../assets/index.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./projects.css";
 
 const p_data = [
   {
+    img: LanImg,
+    p_url: "https://github.com/akleventis/lan_mac_remote",
+    git_url: "https://github.com/akleventis/lan_mac_remote",
+    text: "iOS remote control for Mac over a local area network. Enables triggering media key presses or OS events on a connected Mac running the server via HTTP over TCP/IP. Incorporates Zeroconf for seamless network device registration and discovery. Includes a script to start client/servers with a QR code linking to the remote control page, hosted on the local area network’s IP.",
+    langs: [{ Name: "Python", URL: "https://www.python.org/" }, { Name: "Next.js", URL: "https://nextjs.org/" }],
+  },
+  {
     img: NaotImg,
     p_url: "https://mynaot.com",
     git_url: "https://github.com/akleventis/naot_tc",
-    text: "Contract job for The National Association of Orthopaedic Technologists (NAOT). Utilized Next.js and MaterialUI to build out website with automated Netlify deployment. Integrated Stripe API for secure payments and implemented data fetching scripts for easy registration tracking. Currently maintaining and updating the website for optimal performance.",
+    text: "Contract job for The National Association of Orthopaedic Technologists (NAOT). Utilized Next.js and MaterialUI to build out website with automated Netlify deployment. Integrated Stripe API, and configured/ran an email campaign using the site’s domain.",
     langs: [{ Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "MaterialUI", URL: "https://mui.com/" }],
   },
-  {
-    img: UhpImg,
-    p_url: "https://unitedhouseproductions.com",
-    git_url: "https://github.com/akleventis/united_house_server",
-    text: "Contract job for United House Productions LLC. Client written in React hosted through Amazon S3. Go RESTful API live backend server deployed through DigitalOcean. Stripe checkout integration for secure purchasing. PostgreSQL database for storing products, events, and dj information.",
-    langs: [
-      { Name: "Go", URL: "https://go.dev/" },
-      { Name: "PostgreSQL", URL: "https://www.postgresql.org/" },
-    ],
-  },
+  // {
+  //   img: UhpImg,
+  //   p_url: "https://unitedhouseproductions.com",
+  //   git_url: "https://github.com/akleventis/united_house_server",
+  //   text: "Contract job for United House Productions LLC. Client written in React hosted through Amazon S3. Go RESTful API live backend server deployed through DigitalOcean. Stripe checkout integration for secure purchasing. PostgreSQL database for storing products, events, and dj information.",
+  //   langs: [
+  //     { Name: "Go", URL: "https://go.dev/" },
+  //     { Name: "PostgreSQL", URL: "https://www.postgresql.org/" },
+  //   ],
+  // },
   {
     img: NfcImg,
     p_url: "https://github.com/akleventis/nfc_v1",
