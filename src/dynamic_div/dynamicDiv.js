@@ -19,7 +19,7 @@ export const Taco = () => {
 
 export const Disc = () => {
     return( 
-        <video width="320" className="my_image_click" height="240" controls autoPlay>
+        <video width="320" className="my_image_click" height="240" controls loop autoPlay muted>
         <source src={DiscMov} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
@@ -93,7 +93,6 @@ export const Email = () => {
     const [user_id, service_id, template_id] = [process.env.REACT_APP_EMAIL_USER, process.env.REACT_APP_EMAIL_SERVICE, process.env.REACT_APP_EMAIL_TEMPLATE]
     const handleEmail = (e) => {
         e.preventDefault();
-        console.log(user_id, service_id, template_id)
         emailjs.sendForm(service_id, template_id, e.target, user_id).then(
             (result) => {
                 notify("Your message has been delivered");

@@ -11,8 +11,8 @@ const p_data = [
     img: LanImg,
     p_url: "https://github.com/akleventis/lan_mac_remote",
     git_url: "https://github.com/akleventis/lan_mac_remote",
-    text: "iOS remote control for Mac over a local area network. Enables triggering media key presses or OS events on a connected Mac running the server via HTTP over TCP/IP. Incorporates Zeroconf for seamless network device registration and discovery. Includes a script to start client/servers with a QR code linking to the remote control page, hosted on the local area network’s IP.",
-    langs: [{ Name: "Python", URL: "https://www.python.org/" }, { Name: "Next.js", URL: "https://nextjs.org/" }],
+    text: "Remote control for Mac over a local network. Supports triggering media key presses and OS events on a connected Mac running the server via HTTP over TCP/IP.",
+    langs: [{ Name: "Go", URL: "https://go.dev/" }, { Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "Electron", URL: "https://www.electronjs.org/" }],
   },
   {
     img: NaotImg,
@@ -35,14 +35,14 @@ const p_data = [
     img: NfcImg,
     p_url: "https://github.com/akleventis/nfc_v1",
     git_url: "https://github.com/akleventis/nfc_v1",
-    text: "Virtual letters in the form of a Near Field Communtion (NFC) tag. Scanning these tags redirects the user to a new page through cookie manipulation. The combination of Contentful CMS and Next.js enables me to update the tag with new information without the need for hardcoding, thus creating new routes and pages with simplicity.",
-    langs: [{ Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "Sass", URL: "https://sass-lang.com/" }],
+    text: "Virtual letters in the form of a Near Field Communtion (NFC) tag. Scanning these tags redirects the user to a new page through cookie manipulation. The combination of Contentful CMS and Next.js enables dynamic route / page updates.",
+    langs: [{ Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "Contentful", URL: "https://www.contentful.com/" }],
   },
   {
     img: AutoTab,
     p_url: "https://bit.ly/auto-tab-groups",
     git_url: "https://github.com/furofo/TabGroupExtension",
-    text: "Updated Chrome Auto Tab Group Extension with enhanced features, increasing user count from ~100 to 900+ while maintaining a 4.5-star rating. Improved styling, added multi-group support, zoom, ungrouping on no matching URL text, and an overall codebase clean-up.",
+    text: "Updated Chrome Auto Tab Group Extension with enhanced features, increasing user count from ~100 to 1000+ while maintaining a 4.5-star rating. Improved styling, added multi-group support, zoom, ungrouping on no matching URL text, and an overall codebase clean-up.",
     langs: [{ Name: "JavaScript", URL: "https://www.javascript.com/" }, { Name: "HTML/CSS", URL: "https://www.w3.org/standards/webdesign/htmlcss" }],
   },
 ];
@@ -88,7 +88,7 @@ class Projects extends React.Component {
             })}
           </div>
           <p className="more">
-            - more side projects @{" "}
+            - more @{" "}
             <a
               className="in-link"
               href="http://alexcod.es/github"
