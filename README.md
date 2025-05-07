@@ -1,8 +1,10 @@
 Portfolio Site
 ----
-Repo for my personal site. Hosted through AWS using Cloudfront for https
+Repo for my personal site.
 
-🚀 [Link to website](https://www.alexleventis.com/) 🚀
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c893913c-2107-4340-bcdf-c3ebdc1b7401/deploy-status)](https://app.netlify.com/sites/leventisportfolio/deploys)
+
+🚀 https://alexleventis.com 🚀
 
 <b>Features</b>
 

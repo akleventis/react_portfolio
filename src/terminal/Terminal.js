@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect/dist/core';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import resume from '../docs/resume.pdf'
-import {Disc, Winter, Taco, Travel, Piano, MyImage, Raleigh, Email} from '../dynamic_div/dynamicDiv.js'
+import {Disc, Videography, Winter, Taco, Travel, Piano, MyImage, Raleigh, Email} from '../dynamic_div/dynamicDiv.js'
 import {Bacon, Lumpy, Bmo} from '../assets/index.js'
 
 
@@ -17,6 +17,7 @@ class Terminal extends React.Component {
   }
 
   componentDidMount() {
+    const videography = () => this.setState({divSection: <Videography/>});
     const snow = () => this.setState({divSection: <Winter />});
     const disc = () => this.setState({divSection: <Disc />});
     const taco = () => this.setState({divSection: <Taco />});
@@ -40,10 +41,10 @@ class Terminal extends React.Component {
       ];
       
       let lst2 = [
-        ["a", " hey i'm alex"],
+        ["a", "hey i'm alex"],
         ["b", '<a id="r" target="_blank">resume.pdf</a>'],
         ["c", '<a id="raleigh">Denver, Co</a>'],
-        ["d", ' [<a id="travel">"Travel"</a>, <a id="snow">"Snow"</a>, <a id="disc">"Disc Golf"</a>, <a id="taco">"Taco"</a>, <a id="piano">"Piano"</a>]'],
+        ["d", '[<a id="videography">"Videography"</a>, <a id="travel">"Travel"</a>, <a id="snow">"Snow"</a>, <a id="disc">"Disc Golf"</a>, <a id="taco">"Taco"</a>, <a id="piano">"Piano"</a>]'],
         ["e", "<a href='https://www.waketech.edu/programs-courses/credit/computer-programming' target='_blank'>Associate of Applied Science in Computer Programming and Development</a>"],
         [
           "f",
@@ -81,10 +82,10 @@ class Terminal extends React.Component {
         })
       }
       if (i === 5){
-        const mapping = {'snow': snow, 'taco': taco, 'disc': disc,
+        const mapping = {'videography': videography, 'snow': snow, 'taco': taco, 'disc': disc,
                           'piano': piano,
                           'travel': travel};
-        const ids = ['snow', 'taco', 'travel', 'piano', 'disc']
+        const ids = ['videography', 'snow', 'taco', 'travel', 'piano', 'disc']
         ids.forEach(e => {
           document.getElementById(e).addEventListener('click', event => {
             mapping[e]();

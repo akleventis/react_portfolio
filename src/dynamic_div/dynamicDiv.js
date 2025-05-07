@@ -1,10 +1,8 @@
 import "./dynamicDiv.css";
 import "aos/dist/aos.css";
-import AOS from 'aos';
 import emailjs from "@emailjs/browser";
 import "react-image-gallery/styles/css/image-gallery.css";
-import {TravelImg, CodeImg, GithubImg, MeAudrey, DiscMov, TacoImg, SnowMov, PianoMov} from "../assets/index.js"
-import { useEffect } from "react";
+import {TravelImg, MeAudrey, DiscMov, TacoImg, SnowMov, PianoMov, VideographyMov} from "../assets/index.js"
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -35,22 +33,13 @@ export const Winter = () => {
       )
 }
 
-
-export const Code = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 800,
-        });
-    
-    })
-    return (
-        <div className="code_container">
-          <a  className="img-link" href="http://alexcod.es/github" target="_blank" rel="noreferrer">
-              <img data-aos={"zoom-in"} className="inner_image" src={GithubImg} alt="github" />
-          </a>
-          <img className="my_image_click" src={CodeImg} alt="computer" />
-        </div>
-      );
+export const Videography = () => {
+    return( 
+        <video width="320" className="my_image_click" height="240"  controls autoPlay>
+        <source src={VideographyMov} type="video/mp4" />
+        Your browser does not support the video tag.
+        </video>
+      )
 }
 
 export const Piano = () =>  {
@@ -61,23 +50,6 @@ export const Piano = () =>  {
         </video>
       )
 }
-
-// export const Ukulele = () => {
-//     useEffect(() => {
-//         AOS.init({
-//             duration: 800,
-//         });
-    
-//     })
-//     return( 
-//         <div className="code_container">
-//             <a className="img-link" href="https://youtu.be/zcLkoWz_v38" width="200px"target="_blank" rel="noreferrer">
-//                 <img data-aos={"zoom-in"} className="inner_image" src={YoutubeImg} alt="youtube"/>
-//             </a>
-//             <img className="my_image_click" src={UkeImg} alt="uke" />
-//         </div>
-//   )
-// }
 
 export const MyImage = () =>{
     return <img src={MeAudrey} id="my_image" className="my_image_click" alt="profilePicture" />

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
 import React from "react";
-import { AutoTab, GitImg, LanImg, NaotImg, NfcImg } from "../assets/index.js";
+import { AutoTab, GitImg, LanImg, NfcImg, UhpImg } from "../assets/index.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./projects.css";
@@ -14,23 +14,6 @@ const p_data = [
     text: "Remote control for Mac over a local network. Supports triggering media key presses and OS events on a connected Mac running the server via HTTP over TCP/IP.",
     langs: [{ Name: "Go", URL: "https://go.dev/" }, { Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "Electron", URL: "https://www.electronjs.org/" }],
   },
-  {
-    img: NaotImg,
-    p_url: "https://mynaot.com",
-    git_url: "https://github.com/akleventis/naot_tc",
-    text: "Contract job for The National Association of Orthopaedic Technologists (NAOT). Utilized Next.js and MaterialUI to build out website with automated Netlify deployment. Integrated Stripe API, and configured/ran an email campaign using the site’s domain.",
-    langs: [{ Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "MaterialUI", URL: "https://mui.com/" }],
-  },
-  // {
-  //   img: UhpImg,
-  //   p_url: "https://unitedhouseproductions.com",
-  //   git_url: "https://github.com/akleventis/united_house_server",
-  //   text: "Contract job for United House Productions LLC. Client written in React hosted through Amazon S3. Go RESTful API live backend server deployed through DigitalOcean. Stripe checkout integration for secure purchasing. PostgreSQL database for storing products, events, and dj information.",
-  //   langs: [
-  //     { Name: "Go", URL: "https://go.dev/" },
-  //     { Name: "PostgreSQL", URL: "https://www.postgresql.org/" },
-  //   ],
-  // },
   {
     img: NfcImg,
     p_url: "https://github.com/akleventis/nfc_v1",
@@ -45,6 +28,23 @@ const p_data = [
     text: "Updated Chrome Auto Tab Group Extension with enhanced features, increasing user count from ~100 to 1000+ while maintaining a 4.5-star rating. Improved styling, added multi-group support, zoom, ungrouping on no matching URL text, and an overall codebase clean-up.",
     langs: [{ Name: "JavaScript", URL: "https://www.javascript.com/" }, { Name: "HTML/CSS", URL: "https://www.w3.org/standards/webdesign/htmlcss" }],
   },
+  {
+    img: UhpImg,
+    p_url: "https://unitedhouseproductions.com",
+    git_url: "https://github.com/akleventis/united_house_productions",
+    text: "Contract project for United House Productions LLC. Built a React-based landing page with Contentful CMS for easy content updates. Integrated an email booking form for agent inquiries. Site supported 10 successfully hosted events.",
+    langs: [
+      { Name: "Javascript", URL: "https://www.javascript.com/" },
+      { Name: "React", URL: "https://reactjs.org/" },
+    ],
+  },
+  // {
+  //   img: NaotImg,
+  //   p_url: "https://mynaot.com",
+  //   git_url: "https://github.com/akleventis/naot_tc",
+  //   text: "Contracted by the National Association of Orthopaedic Technologists (NAOT). Built a marketing website using Next.js and Material UI with automated deployment via Netlify. Integrated Stripe for payments and configured a domain-linked email campaign.",
+  //   langs: [{ Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "MaterialUI", URL: "https://mui.com/" }],
+  // },
 ];
 
 export const Project = ({ img, p_url, git_url, text, langs }) => {

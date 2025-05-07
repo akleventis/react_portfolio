@@ -167,15 +167,15 @@ class Resume extends React.Component {
               <span>November 2022 - Present</span>
             </p>
             <p className="h-span">
-              <i>Intern - Backend Software Engineer III</i>
+              <i>Intern - Senior Backend Engineer</i>
               <span>Denver, Co</span>
             </p>
           </div>
 
           <ul>
             {resumeBullets.map((bullet, index) => (
-                <li>
-                  <span key={index}>{bullet}</span>
+                <li key={index}>
+                  <span>{bullet}</span>
                 </li>
             ))}
             <a
