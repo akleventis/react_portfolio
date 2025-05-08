@@ -35,7 +35,7 @@ export const Winter = () => {
 
 export const Videography = () => {
     return( 
-        <video width="320" className="my_image_click" height="240"  controls autoPlay>
+        <video width="320" className="my_image_click" height="240"  controls autoPlay muted>
         <source src={VideographyMov} type="video/mp4" />
         Your browser does not support the video tag.
         </video>
