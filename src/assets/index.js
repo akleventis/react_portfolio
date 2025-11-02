@@ -24,6 +24,7 @@ export const GitImg = require('./projects/git.png').default
 export const UhpImg = require('./projects/uhp.png').default
 export const NaotImg = require('./projects/naot_logo.png').default
 export const NfcImg = require('./projects/nfc.png').default
+export const JournalImg = require('./projects/journal.png').default
 export const LanImg = require('./projects/lan_remote.png').default
 
 // Resume //
