@@ -19,7 +19,7 @@ class Navbar extends React.Component {
           </label>
           <img src={SunImg}  alt="light" />
         </div>
-        <h3>Alex Leventis</h3>
+        <h3>Alex the Human</h3>
       </div>
     );
   }

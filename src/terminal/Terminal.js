@@ -3,10 +3,10 @@ import "./terminal.css";
 import Typewriter from 'typewriter-effect/dist/core';
 import AOS from 'aos';
 import "aos/dist/aos.css";
-import resume from '../docs/resume.pdf'
-import {Disc, Videography, Winter, Taco, Travel, Piano, MyImage, Raleigh, Email} from '../dynamic_div/dynamicDiv.js'
+import {Disc, Videography, Winter, Taco, Travel, Piano, MyImage, Raleigh} from '../dynamic_div/dynamicDiv.js'
 import {Bacon, Lumpy, Bmo} from '../assets/index.js'
 
+const resume = 'https://toop-assets.s3.us-east-1.amazonaws.com/resume.pdf';
 
 class Terminal extends React.Component {
   constructor(props) {
@@ -24,33 +24,32 @@ class Terminal extends React.Component {
     const piano = () => this.setState({divSection: <Piano />});
     const travel = () => this.setState({divSection: <Travel />});
     const raleigh = () => this.setState({divSection: <Raleigh />})
-    const email = () => this.setState({divSection: <Email />})
 
     AOS.init();
 
     let lst1 = [
-        ["1", '> print("hey i\'m alex")'],
+        ["1", '> print(intro)'],
         ["2", "> print(resume)"],
         ["3", "> print(location)"],
         ["4", "> print(interests)"],
         ["5", "> print(degree)"],
         ["6", "> print(links)"],
-        ["7", "> print(email)"],
+        ["7", "> print(email.address)"],
         ["8", "> alex.image()"],
         ["9", "> "],
       ];
       
       let lst2 = [
-        ["a", "hey i'm alex"],
+        ["a", "Hi! Welcome to my BA (Before AI) website - embrace the raw authenticity."],
         ["b", '<a id="r" target="_blank">resume.pdf</a>'],
         ["c", '<a id="raleigh">Denver, Co</a>'],
         ["d", '[<a id="videography">"Videography"</a>, <a id="travel">"Travel"</a>, <a id="snow">"Snow"</a>, <a id="disc">"Disc Golf"</a>, <a id="taco">"Taco"</a>, <a id="piano">"Piano"</a>]'],
         ["e", "<a href='https://www.waketech.edu/programs-courses/credit/computer-programming' target='_blank'>Associate of Applied Science in Computer Programming and Development</a>"],
         [
           "f",
-          ' [<a href="http://alexcod.es/github" target="_blank">github.com</a>, <a href="http://alexcod.es/linkedin" target="_blank">linkedin.com</a>]',
+          ' [<a href="https://bit.ly/4l5cJzH" target="_blank">github.com</a>, <a href="https://bit.ly/4ra7y2B" target="_blank">linkedin.com</a>]',
         ],
-        ["g", '<a id="email">alex.leventis1@gmail.com</a>'],
+        ["g", '<a id="email" href="mailto:tooperr@proton.me">tooperr@proton.me</a>'],
         ["h", '<a>Click me!</a>'],
       ];
     
@@ -90,11 +89,6 @@ class Terminal extends React.Component {
           document.getElementById(e).addEventListener('click', event => {
             mapping[e]();
           }) 
-        })
-      }
-      if (i===8) {
-        document.getElementById('email').addEventListener('click', e => {
-          email();
         })
       }
       if (i < lst1.length) {

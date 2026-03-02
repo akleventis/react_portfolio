@@ -11,11 +11,11 @@ import {
   UsafImg,
   NextImg
 } from '../assets/index.js';
-import resume from '../docs/resume.pdf';
-import transcript from '../docs/transcript.pdf';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+const RESUME_URL = 'https://bit.ly/406kAmR';
+const TRANSCRIPT_URL = 'https://bit.ly/406AOMM';
 let resumeBullets = [
   'Architect and implement RESTful services in Go within a microservices ecosystem.',
   'Assist in migrating services from Python to Go, enhancing performance and tech stack maintainability.',
@@ -43,12 +43,12 @@ class Resume extends React.Component {
       <div className="outer">
         <div className="inner one">
           <div className="r-header">
-            <a target="_blank" rel="noreferrer" href={resume}>
+            <a target="_blank" rel="noreferrer" href={RESUME_URL}>
               <h4>Resume</h4>
             </a>
 
             <a
-              href={resume}
+              href={RESUME_URL}
               style={{ backgroundImage: `url(${SiteImg})` }}
               target="_blank"
               name="site-link"
@@ -307,7 +307,7 @@ class Resume extends React.Component {
             </li>
             <li>
               <span>
-              <a target="_blank" rel="noreferrer" href={transcript}>
+              <a target="_blank" rel="noreferrer" href={TRANSCRIPT_URL}>
                 View transcript {" "}
               <img
                 src={SiteImg}
