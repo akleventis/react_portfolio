@@ -4,7 +4,7 @@ Pre-AI website Built with **React 17** and deployed via Netlify
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c893913c-2107-4340-bcdf-c3ebdc1b7401/deploy-status)](https://app.netlify.com/sites/leventisportfolio/deploys)
 
-🚀 https://alexleventis.com 🚀
+🚀 https://me.tooper.io 🚀
 
 **Features**
 - Light / dark mode
