@@ -3,7 +3,7 @@ export const SunImg = require('./slider/sun.png').default
 export const MoonImg = require('./slider/moon.png').default
 
 // Terminal //
-export const TacoImg = require('./terminal/taco.png').default
+export const TaroNejiImg = require('./terminal/taroneji.jpeg').default
 export const TravelImg = require('./terminal/travel.jpeg').default
 export const MeAudrey = require('./terminal/me_and_audrey.png').default
 export const Bacon = require('./terminal/bacon.mp3').default
@@ -29,7 +29,10 @@ export const LanImg = require('./projects/lan_remote.png').default
 
 // Resume //
 export const BitlyImg = require('./resume/bitly.png').default
+export const BashImg = require('./resume/bash.png').default
+export const ElectronImg = require('./resume/electron.png').default
 export const GoImg = require('./resume/gologo.png').default
+export const TsImg = require('./resume/typescript.png').default
 export const JavaImg = require('./resume/javalogo.png').default
 export const JsImg = require('./resume/jslogo.png').default
 export const NextImg = require('./resume/nextjs.png').default

@@ -1,15 +1,15 @@
 import "./dynamicDiv.css";
 import "aos/dist/aos.css";
 import "react-image-gallery/styles/css/image-gallery.css";
-import {TravelImg, MeAudrey, DiscMov, TacoImg, SnowMov, PianoMov, VideographyMov} from "../assets/index.js"
+import {TravelImg, MeAudrey, DiscMov, TaroNejiImg, SnowMov, PianoMov, VideographyMov} from "../assets/index.js"
 
 
 export const Travel = () => {
      return   <img className="my_image_click" src={TravelImg} alt="travel"/>
 }
 
-export const Taco = () => {
-     return   <img className="my_image_click" src={TacoImg} alt="taco kitty"/>
+export const TaroNeji = () => {
+     return   <img className="my_image_click" src={TaroNejiImg} alt="taro neji kitty"/>
 }
 
 export const Disc = () => {

@@ -18,8 +18,8 @@ const p_data = [
     img: JournalImg,
     p_url: "https://bit.ly/4u3jIgB",
     git_url: "https://bit.ly/4u3jIgB",
-    text: "Personal journal application built with Electron, React, and IndexedDB. Features local storage and optional AWS S3 cloud synchronization for long-term data persistence.",
-    langs: [{ Name: "Electron", URL: "https://www.electronjs.org/" }, { Name: "React", URL: "https://reactjs.org/" }, { Name: "IndexDB", URL: "https://www.w3.org/TR/IndexedDB/" }],
+    text: "Local-first Electron + React + TypeScript desktop app managing 8 years and 2,900+ daily entries. Bidirectional AWS S3 sync with conflict detection and atomic writes. Secure IPC layer via Electron's contextBridge exposing SQLite and sync ops to the renderer.",
+    langs: [{ Name: "Electron", URL: "https://www.electronjs.org/" }, { Name: "AWS S3", URL: "https://aws.amazon.com/s3/" }, { Name: "SQLite", URL: "https://www.sqlite.org/" }],
   },
   {
     img: NfcImg,

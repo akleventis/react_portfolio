@@ -3,11 +3,13 @@ import './resume.css';
 import {
   SiteImg,
   BitlyImg,
+  BashImg,
+  ElectronImg,
   PyImg,
   GoImg,
+  TsImg,
   WakeImg,
   SqlImg,
-  ReactImg,
   UsafImg,
   NextImg
 } from '../assets/index.js';
@@ -73,34 +75,24 @@ class Resume extends React.Component {
                 alt="golang logo"
               />
             </a>
-            <a href="https://reactjs.org/" rel="noreferrer" target="_blank" alt="source">
-              <img
-                data-aos={'zoom-in'}
-                data-aos-duration="1000"
-                src={ReactImg}
-                height="50px"
-                width="50px"
-                alt="React logo"
-              />
-            </a>
-            <a href="https://nextjs.org/" rel="noreferrer" target="_blank" alt="source">
-              <img
-                data-aos={'zoom-in'}
-                data-aos-duration="700"
-                src={NextImg}
-                height="50px"
-                width="50px"
-                alt="JavaScript logo"
-              />
-            </a>
             <a href="https://www.python.org/" rel="noreferrer" target="_blank" alt="source">
               <img
                 data-aos={'zoom-in'}
-                data-aos-duration="1300"
+                data-aos-duration="600"
                 src={PyImg}
                 height="50px"
                 width="50px"
                 alt="python logo"
+              />
+            </a>
+            <a href="https://www.typescriptlang.org/" rel="noreferrer" target="_blank" alt="source">
+              <img
+                data-aos={'zoom-in'}
+                data-aos-duration="800"
+                src={TsImg}
+                height="50px"
+                width="50px"
+                alt="typescript logo"
               />
             </a>
             <a
@@ -111,49 +103,63 @@ class Resume extends React.Component {
             >
               <img
                 data-aos={'zoom-in'}
-                data-aos-duration="1900"
+                data-aos-duration="1000"
                 src={SqlImg}
                 height="50px"
                 width="50px"
                 alt="sql logo"
               />
             </a>
+            <a href="https://www.gnu.org/software/bash/" rel="noreferrer" target="_blank" alt="source">
+              <img
+                data-aos={'zoom-in'}
+                data-aos-duration="1200"
+                src={BashImg}
+                height="50px"
+                width="50px"
+                alt="bash logo"
+              />
+            </a>
+            <a href="https://nextjs.org/" rel="noreferrer" target="_blank" alt="source">
+              <img
+                data-aos={'zoom-in'}
+                data-aos-duration="1600"
+                src={NextImg}
+                height="50px"
+                width="50px"
+                alt="Next.js logo"
+              />
+            </a>
+            <a href="https://www.electronjs.org/" rel="noreferrer" target="_blank" alt="source">
+              <img
+                data-aos={'zoom-in'}
+                data-aos-duration="1800"
+                src={ElectronImg}
+                height="50px"
+                width="50px"
+                alt="electron logo"
+              />
+            </a>
           </div>
 
-          <h5>General</h5>
+          <h5>Tools</h5>
           <section className="lang-container">
-            <p className="lp gen">Team player</p>
-            <p className="lp gen">Analytical</p>
-            <p className="lp gen">Research-oriented</p>
+            <p className="lp gen">Claude Code</p>
+            <p className="lp gen">Cursor</p>
+            <p className="lp gen">Git</p>
+            <p className="lp gen">GCP</p>
+            <p className="lp gen">AWS</p>
+            <p className="lp gen">Jira</p>
+            <p className="lp gen">Slack</p>
           </section>
 
-          <h5>Technical</h5>
+          <h5>Practices</h5>
           <section className="lang-container">
-            <a href="https://git-scm.com/" rel="noreferrer" target="_blank">
-              <p className="lp">Git Workflows</p>
-            </a>
-            <a
-              href="https://en.wikipedia.org/wiki/Agile_software_development"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <p className="lp">Agile Software Development</p>
-            </a>
-            <a
-              href="https://en.wikipedia.org/wiki/Representational_state_transfer"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <p className="lp">RESTful Architecture</p>
-            </a>
-          </section>
-          <section className="lang-container">
-            <a href="https://www.atlassian.com/software/jira" rel="noreferrer" target="_blank">
-              <p className="lp">Jira Software</p>
-            </a>
-            <a href="https://cloud.google.com/" rel="noreferrer" target="_blank">
-              <p className="lp">Google Cloud Platform</p>
-            </a>
+            <p className="lp gen">CI/CD</p>
+            <p className="lp gen">Microservices</p>
+            <p className="lp gen">Distributed Systems</p>
+            <p className="lp gen">A/B Testing</p>
+            <p className="lp gen">System Design</p>
           </section>
           {/* --------------------SECTION------------------------ */}
 
