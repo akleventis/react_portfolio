@@ -81,11 +81,11 @@ class Projects extends React.Component {
             - more @{" "}
             <a
               className="in-link"
-              href="http://alexcod.es/github"
+              href="https://rd.tooper.io/github"
               rel="noreferrer"
               target="_blank"
             >
-              alexcod.es/github{" "}
+              rd.tooper.io/github{" "}
             </a>
             -
           </p>

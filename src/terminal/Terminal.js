@@ -47,9 +47,9 @@ class Terminal extends React.Component {
         ["e", "<a href='https://www.waketech.edu/programs-courses/credit/computer-programming' target='_blank'>Associate of Applied Science in Computer Programming and Development</a>"],
         [
           "f",
-          ' [<a href="https://bit.ly/4l5cJzH" target="_blank">github.com</a>, <a href="https://bit.ly/4ra7y2B" target="_blank">linkedin.com</a>]',
+          ' [<a href="https://rd.tooper.io/github" target="_blank">github.com</a>, <a href="https://rd.tooper.io/linkedin" target="_blank">linkedin.com</a>]',
         ],
-        ["g", '<a id="email" href="mailto:tooperr@proton.me">tooperr@proton.me</a>'],
+        ["g", '<a id="email" href="mailto:mail@tooper.io">mail@tooper.io</a>'],
         ["h", '<a>Click me!</a>'],
       ];
     

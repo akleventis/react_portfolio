@@ -13,8 +13,8 @@ class Footer extends React.Component{
         return (
             <footer>
             <p>
-              © 2026<span className="link"><a href="https://bit.ly/4ra7y2B" rel="noreferrer" target="_blank">LinkdIn</a></span
-              ><span className="link"><a href="https://bit.ly/4l5cJzH" rel="noreferrer" target="_blank">Github</a></span>
+              © 2026<span className="link"><a href="https://rd.tooper.io/linkedin" rel="noreferrer" target="_blank">LinkdIn</a></span
+              ><span className="link"><a href="https://rd.tooper.io/github" rel="noreferrer" target="_blank">Github</a></span>
             </p>
           </footer>
         )
