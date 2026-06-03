@@ -1,12 +1,26 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
 import React from "react";
-import { AutoTab, GitImg, LanImg, NfcImg, JournalImg } from "../assets/index.js";
+import { AutoTab, GitImg, LanImg, NfcImg, JournalImg, UhpImg, ClosetImg } from "../assets/index.js";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./projects.css";
 
 const p_data = [
+  {
+    img: JournalImg,
+    p_url: "https://bit.ly/4u3jIgB",
+    git_url: "https://bit.ly/4u3jIgB",
+    text: "Local-first Electrobun + AWS S3 + TypeScript desktop app managing 8 years and 3,000+ daily entries. Event-driven bidirectional sync pipeline using a pure diff planner, last-write-wins timestamps, and atomic commits. Secure multi-process RPC layer exposing SQLite and sync operations to the TypeScript renderer via a typed contract.",
+    langs: [{ Name: "Electrobun", URL: "https://electrobun.dev/" }, { Name: "AWS S3", URL: "https://aws.amazon.com/s3/" }, { Name: "SQLite", URL: "https://www.sqlite.org/" }],
+  },
+  {
+    img: ClosetImg,
+    p_url: "https://closet.tooper.io",
+    git_url: "https://bit.ly/4u7ACcB",
+    text: "Personal clothing inventory app with multi-user, multi-closet support. Browse items publicly; add, edit, and delete with authentication. Serverless backend via Netlify Functions with AWS S3 storage, Netlify Identity auth, and async background removal on item images.",
+    langs: [{ Name: "TypeScript", URL: "https://www.typescriptlang.org/" }, { Name: "React", URL: "https://reactjs.org/" }, { Name: "AWS S3", URL: "https://aws.amazon.com/s3/" }, { Name: "Netlify", URL: "https://www.netlify.com/" }],
+  },
   {
     img: LanImg,
     p_url: "https://bit.ly/405GMh4",
@@ -15,25 +29,25 @@ const p_data = [
     langs: [{ Name: "Go", URL: "https://go.dev/" }, { Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "Electron", URL: "https://www.electronjs.org/" }],
   },
   {
-    img: JournalImg,
-    p_url: "https://bit.ly/4u3jIgB",
-    git_url: "https://bit.ly/4u3jIgB",
-    text: "Local-first Electron + React + TypeScript desktop app managing 8 years and 2,900+ daily entries. Bidirectional AWS S3 sync with conflict detection and atomic writes. Secure IPC layer via Electron's contextBridge exposing SQLite and sync ops to the renderer.",
-    langs: [{ Name: "Electron", URL: "https://www.electronjs.org/" }, { Name: "AWS S3", URL: "https://aws.amazon.com/s3/" }, { Name: "SQLite", URL: "https://www.sqlite.org/" }],
-  },
-  {
-    img: NfcImg,
-    p_url: "https://bit.ly/4aM6bCA",
-    git_url: "https://bit.ly/4aM6bCA",
-    text: "Virtual letters in the form of a Near Field Communtion (NFC) tag. Scanning these tags redirects the user to a new page through cookie manipulation. The combination of Contentful CMS and Next.js enables dynamic route / page updates.",
-    langs: [{ Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "Contentful", URL: "https://www.contentful.com/" }],
-  },
-  {
     img: AutoTab,
     p_url: "https://bit.ly/auto-tab-groups",
     git_url: "https://bit.ly/4aKmP5p",
     text: "Updated Chrome Auto Tab Group Extension with enhanced features, increasing user count from ~100 to 1000+ while maintaining a 4.5-star rating. Improved styling, added multi-group support, zoom, ungrouping on no matching URL text, and an overall codebase clean-up.",
     langs: [{ Name: "JavaScript", URL: "https://www.javascript.com/" }, { Name: "HTML/CSS", URL: "https://www.w3.org/standards/webdesign/htmlcss" }],
+  },
+  {
+    img: NfcImg,
+    p_url: "https://bit.ly/4aM6bCA",
+    git_url: "https://bit.ly/4aM6bCA",
+    text: "Virtual letters in the form of a Near Field Communication (NFC) tag. Scanning these tags redirects the user to a new page through cookie manipulation. The combination of Contentful CMS and Next.js enables dynamic route / page updates.",
+    langs: [{ Name: "Next.js", URL: "https://nextjs.org/" }, { Name: "Contentful", URL: "https://www.contentful.com/" }],
+  },
+  {
+    img: UhpImg,
+    p_url: "https://unitedhouseproductions.com/",
+    git_url: "https://bit.ly/4e0bXkp",
+    text: "Contract work — website for a house music events and artist management collective. Events and about content managed via Contentful CMS, with a booking inquiry form via EmailJS.",
+    langs: [{ Name: "React", URL: "https://reactjs.org/" }, { Name: "Contentful", URL: "https://www.contentful.com/" }, { Name: "Netlify", URL: "https://www.netlify.com/" }],
   },
 ];
 

@@ -11,7 +11,8 @@ import {
   WakeImg,
   SqlImg,
   UsafImg,
-  NextImg
+  NextImg,
+  ReactImg
 } from '../assets/index.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,12 +21,11 @@ const RESUME_URL = 'https://bit.ly/406kAmR';
 const TRANSCRIPT_URL = 'https://bit.ly/406AOMM';
 let resumeBullets = [
   'Architect and implement RESTful services in Go within a microservices ecosystem.',
-  'Assist in migrating services from Python to Go, enhancing performance and tech stack maintainability.',
-  'Led team in upgrading Bitly’s anonymous shortener system, significantly improving site security.',
-  'Integrated Optimizely’s Feature Experimentation service, enabling streamlined A/B testing across applications. (Go)',
-  'Integrated Gemini AI for domain generation, driving major product upgrades. (Go)',
-  'Developed admin tooling to automate metric population in dev environments, boosting developer and QA efficiency.',
-  'Active member of a rotating on-call shift for DDoS attack and server mitigation',
+  'Led team in upgrading Bitly\'s anonymous shortener system, significantly improving site security.',
+  'Integrated Optimizely\'s Feature Experimentation service, enabling streamlined A/B testing across applications.',
+  'Integrated Gemini AI for domain generation, driving major product upgrades.',
+  'Contribute to frontend TypeScript/React codebase, diagnosing and resolving bugs across the stack.',
+  'Participate in rotating on-call for DDoS and server incident mitigation.',
 ]
 
 class Resume extends React.Component {
@@ -130,6 +130,16 @@ class Resume extends React.Component {
                 alt="Next.js logo"
               />
             </a>
+            <a href="https://reactjs.org/" rel="noreferrer" target="_blank" alt="source">
+              <img
+                data-aos={'zoom-in'}
+                data-aos-duration="1600"
+                src={ReactImg}
+                height="50px"
+                width="50px"
+                alt="react logo"
+              />
+            </a>
             <a href="https://www.electronjs.org/" rel="noreferrer" target="_blank" alt="source">
               <img
                 data-aos={'zoom-in'}
@@ -144,8 +154,6 @@ class Resume extends React.Component {
 
           <h5>Tools</h5>
           <section className="lang-container">
-            <p className="lp gen">Claude Code</p>
-            <p className="lp gen">Cursor</p>
             <p className="lp gen">Git</p>
             <p className="lp gen">GCP</p>
             <p className="lp gen">AWS</p>
@@ -198,7 +206,7 @@ class Resume extends React.Component {
             <a
               href="https://www.python.org/"
               data-aos={'flip-down'}
-              style={{ top: '15%' }}
+              style={{ top: '20%' }}
               data-aos-duration="1200"
               target="_blank"
               rel="noreferrer"
@@ -209,7 +217,7 @@ class Resume extends React.Component {
             <a
               href="https://nextjs.org/"
               data-aos={'flip-down'}
-              style={{ top: '30%' }}
+              style={{ top: '40%' }}
               data-aos-duration="1200"
               target="_blank"
               rel="noreferrer"
@@ -220,35 +228,24 @@ class Resume extends React.Component {
             <a
               href="https://mariadb.org/"
               data-aos={'flip-down'}
-              style={{ top: '45%' }}
-              data-aos-duration="1200"
-              target="_blank"
-              rel="noreferrer"
-              className="code"
-            >
-              MariaDB
-            </a>
-            <a
-              href="https://cloud.google.com"
-              data-aos={'flip-down'}
               style={{ top: '60%' }}
               data-aos-duration="1200"
               target="_blank"
               rel="noreferrer"
               className="code"
             >
-              GCP
+              MySQL
             </a>
             <a
-              href="https://github.com/"
+              href="https://cloud.google.com"
               data-aos={'flip-down'}
-              style={{ top: '75%' }}
+              style={{ top: '80%' }}
               data-aos-duration="1200"
               target="_blank"
               rel="noreferrer"
               className="code"
             >
-              GitHub
+              GCP
             </a>
           </ul>
 
@@ -268,7 +265,7 @@ class Resume extends React.Component {
           <ul>
             <li>
               <span>
-              Managed and serviced weapon systems and munitions equipment for the F-15 fighter jet.
+              Managed a small team, servicing weapon systems and munitions equipment for the F-15 fighter jet.
               </span>
             </li>
           </ul>
@@ -301,16 +298,6 @@ class Resume extends React.Component {
             </p>
           </div>
           <ul>
-            <li>
-              <span>
-              Proficiently acquired knowledge in Java, HTML/CSS, SQL, RESTful services, and unit testing.
-              </span>
-            </li>
-            <li>
-              <span>
-              Developed hands-on versatility in all-around software development.
-              </span>
-            </li>
             <li>
               <span>
               <a target="_blank" rel="noreferrer" href={TRANSCRIPT_URL}>
