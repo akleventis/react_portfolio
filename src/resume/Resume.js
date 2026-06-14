@@ -17,8 +17,8 @@ import {
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const RESUME_URL = 'https://bit.ly/406kAmR';
-const TRANSCRIPT_URL = 'https://bit.ly/406AOMM';
+const RESUME_URL = 'https://rd.tooper.io/resume';
+const TRANSCRIPT_URL = 'https://rd.tooper.io/transcript';
 let resumeBullets = [
   'Architect and implement RESTful services in Go within a microservices ecosystem.',
   'Led team in upgrading Bitly\'s anonymous shortener system, significantly improving site security.',

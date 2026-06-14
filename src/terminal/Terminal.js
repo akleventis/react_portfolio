@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import {Disc, Videography, Winter, TaroNeji, Travel, Piano, MyImage, Raleigh} from '../dynamic_div/dynamicDiv.js'
 import {Bacon, Lumpy, Bmo} from '../assets/index.js'
 
-const resume = 'https://toop-assets.s3.us-east-1.amazonaws.com/resume.pdf';
+const resume = 'https://rd.tooper.io/resume';
 
 class Terminal extends React.Component {
   constructor(props) {
